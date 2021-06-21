@@ -28,7 +28,11 @@ public void test1() throws InterruptedException {
     //2-click start button
     driver.findElement (By.cssSelector( "#start>button" )).click();
     Thread.sleep( 6000 );  //START BUTTONINA TIKLA VE SAY YAKLASIK KAC SANIYE ICINDE ACILIYOR , BUNU KOYMAYINCA HATA VERIYOR
+
     // 3-verify username displayed on the screen
     Assert.assertTrue( usernameInput.isDisplayed(),"verify username inputbox is displayed " );
 }
 }
+
+//display metdonu neden kullaniyoruz? ornegin  username i inspectte goruyoruz ama websitesinde gozukmuyor, gorebilmemeiz icin
+//start button una tiklamamiz lazim , bu durumda gorunur olmasi icin displayed methoduna basvuruyoruz
