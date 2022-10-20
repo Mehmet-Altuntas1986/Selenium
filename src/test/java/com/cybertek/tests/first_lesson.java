@@ -12,6 +12,9 @@ public class first_lesson {
         System.out.println(faker.name().fullName());
         System.out.println(faker.harryPotter().character());
         System.out.println(faker.finance().creditCard(CreditCardType.FORBRUGSFORENINGEN));
+
+
+
     }
 }
 

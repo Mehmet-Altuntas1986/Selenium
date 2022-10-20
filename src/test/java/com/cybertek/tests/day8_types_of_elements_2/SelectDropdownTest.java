@@ -1,6 +1,6 @@
 package com.cybertek.tests.day8_types_of_elements_2;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -73,7 +73,7 @@ public class SelectDropdownTest {
         Assert.assertEquals(actualOption,expectedOption,"verify first selection");
 
         //HOW TO SELECT OPTIONS FROM DROPDOWN ? THERE ARE 3 WAYS
-        //1.SELECT USING VISIBLE TEXT
+        //1.SELECT USING VISIBLE TEXT METHODU ile
         Thread.sleep(2000);
         stateDropdown.selectByVisibleText("Virginia");  //box in icinde virginia option olarak gorunen kisma geldi
                                                        //it clicked the option for us
@@ -93,7 +93,7 @@ public class SelectDropdownTest {
 
         //3.SELECT BY VALUE
         Thread.sleep(2000);
-        stateDropdown.selectByValue("TX");  //TX I INSPECT ILE BULDU
+        stateDropdown.selectByValue("TX");  //TX i INSPECT ILE BULDU  //secince ilk visible elemnt bu oluyor dropdown da
 
         expectedOption = "Texas";
         actualOption = stateDropdown.getFirstSelectedOption().getText();

@@ -1,6 +1,6 @@
 package com.cybertek.tests.day4_ID_locater;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,7 +40,7 @@ public class tagNameLocator
                  //if there is no id or name, we can use tagname based on two conditions
                  1_ tag should be used only one time
                   2_there are multiple same tags but you want to point the first tag
-               we cannot use index when we use tagName locater. if there are multiple usage of sametag, we cannot point the second one, first one we should choose
+               we cannot use index when we use tagName locater. if there are multiple usage of same tag, we cannot point the second one, first one we should choose
 if id is dynamic and name isd multiple, we cannot use them, instead we use other locators
 
 #selenium source codu yukaridan asagiya dogru okur, ilk input u bulduktan sonra durur, asagi kismdaki codelari okumaz, this is valid for all locaters

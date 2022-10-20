@@ -1,6 +1,6 @@
 package com.cybertek.tests.day3_webelement_intro;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ public class verifyURLnotChanged {
         /*Verify URL not changed
            -open chrome browser
            -go to http://practice.cybertekschool.com/forgot_password Links to an external site.
-           -click on Retrieve password
+           -click on Retrieve password button
            -verify that url did not change
 
          */
@@ -58,5 +58,5 @@ public class verifyURLnotChanged {
 //eger id i gorursek bu bizi button ni bulmamizi saglar, bazen id omayabilir bu durumda nasil button i bulacagiz sonraki derslerde ogrenecegiz
 
 //everything we see in a web are web elements
-//3.adimda ogretmen retrievePasswordButton nin object oldugunu soyledi, baska isimde verebilirddik , new demedik
+//3.adimda ogretmen retrievePasswordButton nin object (cunku String) oldugunu soyledi, baska isimde verebilirddik , new demedik
 //3.adimda driver -->browser i temsil ediyor, button lari selenyum ile kullanirken browserda bulunduklari icin driver ile islem yapacagiz

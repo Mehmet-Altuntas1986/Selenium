@@ -1,6 +1,6 @@
 package com.cybertek.tests.day7_types_of_the_elements;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DisplayedDemo {
+    //Start button una click etmeden once bu kisim gozukmuyordu, tikladiktan sonra username ve password girmek icin 2 box belirdi.
 @Test
 public void test1() throws InterruptedException {
     WebDriver driver= WebDriverFactory.getDriver( "CHROME" );
@@ -31,6 +32,7 @@ public void test1() throws InterruptedException {
 
     // 3-verify username displayed on the screen
     Assert.assertTrue( usernameInput.isDisplayed(),"verify username inputbox is displayed " );
+    Thread.sleep( 6000 );
 }
 }
 

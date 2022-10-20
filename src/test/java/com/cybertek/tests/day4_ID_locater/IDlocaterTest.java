@@ -1,7 +1,7 @@
 package com.cybertek.tests.day4_ID_locater;
 
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

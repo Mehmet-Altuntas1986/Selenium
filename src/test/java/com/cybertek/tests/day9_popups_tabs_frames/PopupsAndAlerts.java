@@ -1,6 +1,6 @@
 package com.cybertek.tests.day9_popups_tabs_frames;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,11 +24,12 @@ public class PopupsAndAlerts {  //bazi pop up lar clickable and inspectable faka
     }
 
     @Test
+
     public void test1(){  //chrome notification ile bu pop up lar farkli , karistirma
         driver.get("https://www.primefaces.org/showcase/ui/overlay/confirmDialog.xhtml");
 
-        //click the Destroy the World button -->bu web sitesinde bu button artik yok (kendim yapmaliyim)
-        driver.findElement(By.xpath("//span[.='Confirm ']")).click();
+        //click the Destroy the World button -->bu web sitesinde bu button artik belirmiyor, eskiden beliriyordu (kendim yapmaliyim)
+        driver.findElement(By.xpath("//span[.='Confirm ']")).click();  //confirm button inina click et         . --> nokta = this
 
         //Click NO button
         driver.findElement(By.xpath("//button[.='No']")).click();
@@ -43,14 +44,14 @@ public class PopupsAndAlerts {  //bazi pop up lar clickable and inspectable faka
         driver.findElement(By.xpath("//button[1]")).click(); //bu java degil index 1 den baslar
 
         //switch to JS alert pop up
-        Alert alert = driver.switchTo().alert();   //Alert seleniuma ait
+        Alert alert = driver.switchTo().alert();   //Alert seleniuma ait   //object olusturuldu
         Thread.sleep(2000);
         alert.accept();
 
         //click for JS confirm
         driver.findElement(By.xpath("//button[2]")).click();
         Thread.sleep(2000);
-        alert.dismiss();
+        alert.dismiss();  // cancel and ok buttons   --> pop up in uzerinde -->click to cancel demek
 
         //click for JS Prompt
         driver.findElement(By.xpath("//button[3]")).click();
@@ -60,6 +61,13 @@ public class PopupsAndAlerts {  //bazi pop up lar clickable and inspectable faka
         alert.accept();
     }
 
-
 }
 //in interview if they ask how to handle pop ups --> answer--> I use Alert  class
+
+//java scriptten gelen popup ve alert leri inspect yapamiyoruz , buyuzden locater kullanamiyoruz , buyuzden biz Alert
+// diye bir class imiz var, switch yapip onu kullaniyoruz
+
+/*    • Following syntax is used for locating elements containing exact text within an element
+     //TagName[text()=‘exact text’]      OR       //TagName[.=‘exact text’]
+
+ */

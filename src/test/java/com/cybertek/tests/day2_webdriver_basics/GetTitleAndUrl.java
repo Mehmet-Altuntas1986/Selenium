@@ -14,9 +14,9 @@ public class GetTitleAndUrl {
         driver.get( "http://practice.cybertekschool.com" ); //yada ayni islemi boyle yap driver.navigate().to("http://practice.cybertekscholl.com" ); --aralarinda bir fark yok
 
 
-        //getting title with selenium
-        String title = driver.getTitle() ; //driver.getTitle() yazdim , sonra option ve enter tusuna tikladim , short cut ile bunu olusturdu
-        System.out.println( "title = " + title );   //soutv deyip entera tikladim bu variable seklini bana olusturdu
+        //getting title with selenium   --usteki tab in icinde yazan baslik
+        String title = driver.getTitle(); //driver.getTitle() yazdim , sonra option ve enter tusuna tikladim , short cut ile bunu olusturdu
+        System.out.println( "title = " + title );   //  soutv deyip entera tikladim bu variable seklini bana olusturdu
 
 
         //getCurrentUrl---> get the url from browser
@@ -25,8 +25,8 @@ public class GetTitleAndUrl {
 
 
 
-        //getPageSource
-        String pageSource = driver.getPageSource();  //driver.getPageSource();+option+enter  //bu methodu cok cok nadir kullanacagiz  //consola bak
+        //getPageSource   -- manuel olarak websitesinde saga tiklayinca-->view page source u tiklayincada ayni sey cikar
+        String pageSource = driver.getPageSource();  //driver.getPageSource();+option+enter  //bu methodu cok cok nadir kullanacagiz  //consola bak- html in tamami belirdi
         System.out.println( "pageSource = " + pageSource ); //soutv+enter
     }
 }

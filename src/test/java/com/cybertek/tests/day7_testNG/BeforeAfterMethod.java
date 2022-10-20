@@ -8,6 +8,7 @@ public class BeforeAfterMethod {
         public void SetUpClass(){
                 System.out.println("--before class");
                 System.out.println("executed one time before the class");
+
         }
 
 

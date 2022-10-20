@@ -1,6 +1,6 @@
 package com.cybertek.tests.day7_types_of_the_elements;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,13 +31,13 @@ public class RadioButtonTest {
         Assert.assertTrue(blueRadioBtn.isSelected(),"Verify that blue is selected"  );//isSelected returns true or false
         Assert.assertFalse(redRadioBtn.isSelected(),"verify that red is not selected" );
 
-       // how to click redradio button?
+       // how to click redradio button?  //redradio button ununa click etmeseydim asagidakiler hata verirdi
         redRadioBtn.click();
 
-//if I click on the redButton in the website  , what happens?
-        Assert.assertFalse(blueRadioBtn.isSelected(),"Verify that blue is not selected"  ); //blue will not be selected , then-->fails ,
-                                                                                               // compiler stops after error inside method
-        Assert.assertTrue(redRadioBtn.isSelected(),"verify that red is not selected" ); //both of them fails , but this line is not visited by jvm
+       //if I click on the redButton in the website  , what happens?
+        Assert.assertFalse(blueRadioBtn.isSelected(),"Verify that blue is not selected"  );  //blue will not be selected , then-->fails ,
+                                                                                                    // compiler stops after error inside method
+        Assert.assertTrue(redRadioBtn.isSelected(),"verify that red is not selected" );   //both of them fails , but this line is not visited by jvm
                               //false
         Thread.sleep( 3000 );
         driver.quit();

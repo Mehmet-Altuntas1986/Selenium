@@ -50,7 +50,7 @@ second types of pop up comes from javascript, mostly known as js alerts. we CANN
 To deal with non html alerts, we have special class from selenium which is Alert
 how to point the alert ?
 Alert alert = driver.switchTo().alert();
-and we have accept, dismiss, sendkets, getText method for alerts.
+and we have accept, dismiss, sendkeys, getText method for alerts.
 If there is no alert on the webpage, and we try to switch,
 NoAlertPresentException: no such alert
 

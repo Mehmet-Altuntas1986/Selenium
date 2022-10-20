@@ -1,6 +1,6 @@
 package com.cybertek.tests.day4_ID_locater;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,7 +42,7 @@ public class nameLocaterTest {
 
     }
 }
-
+//Bazen developerlar id yi unique yapmiyor yada , otomatik olarak kendini yenileyen id ler olabiliyor , bu durumda baska locater kullan, developerlari uyar
 //id is all the time same but problem it can sometimes be changeable,dynamic , in this case we dont use it in test automation , instead we use name
 
 //name is static, not changeable but it can be duplicate --> ornegin  http://practice.cybertekschool.com/radio_buttons

@@ -1,6 +1,6 @@
 package com.cybertek.tests.day3_webelement_intro;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +19,8 @@ public class verifyConfirmationMessage {
      */
 
         //open chrome browser
-        WebDriver driver = WebDriverFactory.getDriver("cHromE");
+        WebDriver driver = WebDriverFactory.getDriver("cHromE");  //toLowerCase methodu var WebDriverFactory
+                                                                       // class inin icindeki getDriver methodunun icinde
 
         //go to http://practice.cybertekschool.com/forgot_password
         driver.get("http://practice.cybertekschool.com/forgot_password");

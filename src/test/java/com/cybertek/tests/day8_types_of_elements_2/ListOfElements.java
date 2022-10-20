@@ -1,6 +1,6 @@
 package com.cybertek.tests.day8_types_of_elements_2;
 
-import com.cybertek.Utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,7 +40,7 @@ public class ListOfElements {
 
         //iter + enter to get  'for each loop' with shortcut
         for (WebElement button : buttons) {
-            System.out.println("button.isDisplayed() = " + button.isDisplayed());
+            System.out.println("button.isDisplayed() = " + button.isDisplayed());  //yani ekranda goruluyor
             Assert.assertTrue(button.isDisplayed(),"verify buttons are displayed");
         }
 

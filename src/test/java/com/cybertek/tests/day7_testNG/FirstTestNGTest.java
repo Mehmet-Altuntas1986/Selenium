@@ -3,7 +3,7 @@ package com.cybertek.tests.day7_testNG;
 import org.testng.annotations.Test;
 
 public class FirstTestNGTest {
-    //BUNU YAZDIKATAN SONRA LINE 3 IMPORTED
+    //BUNU YAZDIKTAN SONRA LINE 3 IMPORTED
     @Test
     public void test1() {
 
@@ -34,5 +34,5 @@ public class FirstTestNGTest {
 
 /*we have test annotations in order to execute out test cases, no main method
     it is a unit testing tool
-it has lots of feTURES ,we will use couple of them
-we will build framework with the unit testing tool (TestNg) ,integreted with selenium and other dependencies*/
+it has lots of feaTURES ,we will use couple of them
+We will build framework with the unit testing tool (TestNg) ,integreted with selenium and other dependencies*/

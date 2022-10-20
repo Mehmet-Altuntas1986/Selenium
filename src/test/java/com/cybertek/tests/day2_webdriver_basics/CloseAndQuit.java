@@ -10,7 +10,7 @@ public class CloseAndQuit {
 
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver();  //opening an empty browser
+        WebDriver driver = new ChromeDriver();  //opening an empty browser   //ChromeDriver is a class comes from selenium, with it driver object is created
 
         driver.get("http://practice.cybertekschool.com"); //navigate to this website
 
@@ -19,7 +19,7 @@ public class CloseAndQuit {
 
 
 
-        driver.close();   //close current tab  //burda browser i kapattik   //yeniden bir empty browser imiz oldu.
+        driver.close();   //close current tab(window ) //burda browser i kapattik   //yeniden bir empty browser imiz oldu.
 
         driver = new ChromeDriver();  //giving new browser tab  //bunu koymazsak birsonraki line da websitesine ulasamaz
 
@@ -27,7 +27,7 @@ public class CloseAndQuit {
 
         Thread.sleep(5000);
 
-        driver.quit();   //closes all tabs  //quit dedigimizde web sitesini yeniden actigimizda onceden web sitesinde yaptigimiz aramalar
+        driver.quit();   //closes all tabs(windows)  //quit dedigimizde web sitesini yeniden actigimizda onceden web sitesinde yaptigimiz aramalar
                                             //karsimiza cikmiyor, sanki o web sitesini ilk defa aciyormus gibi oluruz
 
         //BREAK UNTIL 2:15 (long break)

@@ -9,5 +9,8 @@
         <module name="Eu3TestNGSelenium" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Eu3TestNGSelenium" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
