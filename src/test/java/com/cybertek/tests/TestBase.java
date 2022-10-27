@@ -110,6 +110,8 @@ public class TestBase { //Test base i olusturmamizimn sebebi herbir test case de
 
 }
 
+/*Inheritance  -->we use base classes such as test base in our framework. this class contains the properties and methods which are
+ common to all test classes. all test classes extend this testBase class.*/
 
 //TestBase is not utility or testcase , arasinda bisey , utility package inini icindede koymus olsaydim calisirdi
 //amac butun class larda before ,after method ve diger gerekli olanlari tekrar ve tekrar yazmamak , decleration of variables da yazariz

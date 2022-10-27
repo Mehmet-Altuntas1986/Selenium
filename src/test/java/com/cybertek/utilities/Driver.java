@@ -18,7 +18,6 @@ public class Driver {  //utilities paketinde   //Bu ONCEDEN OLUSTURMUS OLDUGumuz
 
     private static WebDriver driver;  //null              --> local variable olsaydi initilization gerekli olurdu
 
-
     public static WebDriver get()  {  //is this get accepting any browser type? this is only get method
                                     //get in icine webdriverFactory deki gibi parameter koymadik ,cunku switch ile secmesini istedik duruma gore
         if (driver == null) {
@@ -82,3 +81,5 @@ public class Driver {  //utilities paketinde   //Bu ONCEDEN OLUSTURMUS OLDUGumuz
 
 // Driver bir singleton design pattern a ornek - cunku bu class ile diger classlar object olusturamazlar. Ve Bu class
 // ta olusturulmus olan object heryerde kullanilabilir. yani tek object heryerde islevsel
+
+//Encapsulation -->we have a Driver class that uses private driver variable and we use the public getter method to access this.

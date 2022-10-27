@@ -59,9 +59,9 @@ public class NegativeLoginTestWithReport extends TestBase { //in the class level
 
     }
 }
-
+//Bu class i iyi anlamak icin ExtendDemoTest i iyi incele
 //this reports are for non technical people
 
 //sol tarafta test output dosyasi--> report.html e sag tikla-->reveal in finder---> report.html tikla ve bir browser sec  -->siralama  (open in finder i kullanma dedi ama bende reveal in finder yok)
 // onemli screenshot ve report u dogru gormek icn  -->bu siralamayla yapmazsak screenshot i gorememe durumu olabilir
-//screenshot almasi icin bazi test case leri fail etti
+// screenshot almasi icin bazi test case leri fail etti

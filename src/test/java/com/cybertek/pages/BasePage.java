@@ -117,3 +117,17 @@ public abstract class BasePage {  // it gives common locaters and methods betwee
 }
 //BasePage is unique to app   --bu sayfayi bir organize etmeliyiz
 //Pages package indaki diger classlar extends BasePage
+
+/*Abstraction
+we have and abstract basepage where we put the logic to common all the page object classes. my page object classes
+ extend the base class. when we create object of the any page object, we can access the method from abstract class.
+ */
+
+
+/*
+An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract classes
+ cannot be instantiated, but they can be subclassed.
+
+
+
+ */

@@ -8,13 +8,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , loginpage e gelir parantez iclerinde ilgili locater degistirilir
-                           //login page i BasePage e extends yapmadim cunku commen properties yok(ornegin Menu,subtitle ,diger moduller varmi login page de)
+                          //login page i BasePage e extends yapmadim cunku commen properties yok(ornegin Menu,subtitle ,diger moduller varmi login page de)
 
    public LoginPage(){  //constructor
-        PageFactory.initElements( Driver.get(),this);  //pageFactory-is a class from selenium , initElements methodunu oradan kullaniyoruz
+        PageFactory.initElements( Driver.get(),this);  // pageFactory-is a class from selenium , initElements methodunu oradan kullaniyoruz
 
-                                                            //Driver.get() methodu returns driver--> initElements Bize WebDriver driver=new ChromeDriver() gibi bisey elde etmemizi sagliyor
-    }                                                      //ConTrol B ILE INCELE
+                                                            // Driver.get() methodu returns driver--> initElements bize WebDriver driver=new ChromeDriver() gibi bisey elde etmemizi sagliyor
+    }                                                       // Control B ILE INCELE
 
 
     //driver.findElement(By.id("prependedInput")); BOYLE YAZMAK YERINE ayni islemi simdi find annotation lari ile yapacagiz
@@ -31,7 +31,7 @@ public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , lo
     //driver.findElement(By.id("_submit")); we are converting to page object model locater ,
                                  // ayni sey i asagida yaptik findby annotation ile
 
-    @FindBy(id = "_submit")        //butun locater isimleri parantez icinde mevcut id, name , ot others can be used
+    @FindBy(id = "_submit")        //butun locater isimleri parantez icinde mevcut id, name , or others can be used
     public WebElement loginBtn;
 
   //  @FindBy(css=".btn.btn_primary") //6 buttons  -- bu kismi bir soruya cevap olmasi icin yazdi ve sildi
@@ -62,7 +62,6 @@ public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , lo
         passwordInput.sendKeys(password);
         loginBtn.click();
     }
-
 }
 
 //locater lari koydugumuz class ve ayni zamanda bazi methodlarida buraya koyuyoruz
@@ -71,7 +70,9 @@ public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , lo
 
 /*
 /*
-Page Object Model and Page Factory:
+Page Object Model and Page Factory:  // izle --   https://www.youtube.com/watch?v=nrn1ooK5_KQ
+
+
 1. Define and create a package for all the page objects from the application for logical grouping. For example,
  com.vytrack.pages is created to define all the page classes.
 

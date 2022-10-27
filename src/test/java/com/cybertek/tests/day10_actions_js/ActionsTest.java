@@ -103,3 +103,8 @@ public class ActionsTest {
 }
 
 //Cookies lerde alertlere benziyor ama cookies leri inspect edebiliyoruz , alertleri edemeyiz
+
+//Actions class is used to do advanced user interactions like mouse hover, double click, drag and drop etc.
+//        Actions class is a class comes from selenium and is created by passing the webdriver object as constructor.
+//perform() --> perform the action, complete the action
+//moveToElement --> move your mouse to webelement(hover over)

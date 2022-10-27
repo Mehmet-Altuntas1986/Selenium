@@ -22,7 +22,7 @@ public class NegativeLoginTest extends TestBase {  //login test inin negativini 
     }
                         //ogretmen dk 27 de configuration.properties deki degerleri degistirdi ve dediki ayni verileri girin
     @Test
-    public void wrongUsernameTest(){
+    public void wrongUsernameTest() {
 
 //        LoginPage loginPage = new LoginPage();
 

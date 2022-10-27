@@ -20,8 +20,9 @@ public class ExcelUtil {   //r class
     private Workbook workBook;
     private String path;
 
-    public ExcelUtil(String path, String sheetName) {
+    public ExcelUtil(String path, String sheetName) { //CONSTRUCTOR
         this.path = path;
+
         try {
             // Open the Excel file
             FileInputStream ExcelFile = new FileInputStream(path);
@@ -31,13 +32,14 @@ public class ExcelUtil {   //r class
             // check if sheet is null or not. null means  sheetname was wrong
             Assert.assertNotNull(workSheet, "Sheet: \""+sheetName+"\" does not exist\n");
 
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+       } catch (Exception e) {
+          throw new RuntimeException(e);
         }
     }
 
     public String getCellData(int rowNum, int colNum) {
         Cell cell;
+
         try {
             cell = workSheet.getRow(rowNum).getCell(colNum);
             String cellData = cell.toString();
@@ -61,9 +63,10 @@ public class ExcelUtil {   //r class
 
     }
 
-    //this method will return data table as 2d array
-    //so we need this format because of data provider.
-    public String[][] getDataArrayWithoutFirstRow() {
+    // this method will return data table as 2d array
+    // so we need this format because of data provider.
+
+     public String[][] getDataArrayWithoutFirstRow() {
 
         String[][] data = new String[rowCount()-1][columnCount()];
 

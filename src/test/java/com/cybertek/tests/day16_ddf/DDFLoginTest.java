@@ -20,6 +20,7 @@ public class DDFLoginTest extends TestBase {  //EACH TEST CASE OPENING SEPERATE 
         return dataArray;
     }
 
+    //resources file inin icindeki exel de username,password , firstname and lastname isimli exel basliklari var ilk row da
     @Test(dataProvider = "userData")
     public void test1(String username,String password,String firstName,String lastName){  //a,b,c,d de desek calisirdi , onemli olan siralamalri --> birincisi isim , ikincisi SIFRE....
         extentLogger=report.createTest("Test "+firstName+" "+lastName); //DYNAMIC
@@ -40,10 +41,10 @@ public class DDFLoginTest extends TestBase {  //EACH TEST CASE OPENING SEPERATE 
 
 }
 
-//manuel bir sekilde vytrack login kismina resources daki excellden username ve password lari gir ,
+// manuel bir sekilde vytrack login kismina resources daki excellden username ve password lari gir ,
 // ve log in ile acildigina ilk ve son ismin dogru cikmasi , diyelimki listede 300 kisi var ve hepsinin log in
 // yapildigina ekranda ismi dogrumu degilmi kontrol etmek istiyoruz
 
-//selenium is responsible for automating browser --> Assert kismi comes from testNg we use it to create tests,run tests,generate reports
+// selenium is responsible for automating browser --> Assert kismi comes from testNg we use it to create tests,run tests,generate reports
 
-//exelUtil day 16 da olusturuldu   ,resources file inin icinde Vytrackdata .xlsx fiel i var
+// exelUtil day 16 da olusturuldu   ,resources file inin icinde Vytrackdata .xlsx fiel i var

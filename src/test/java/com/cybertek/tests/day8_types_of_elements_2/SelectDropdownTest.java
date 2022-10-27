@@ -42,7 +42,6 @@ public class SelectDropdownTest {
                                        //   Webelementi parantez icine koymayinca hata veriyor
 
 
-
         //getOptions --> returns all the available options from the dropdown
         List<WebElement> options = stateDropdown.getOptions();
         //print size of the options

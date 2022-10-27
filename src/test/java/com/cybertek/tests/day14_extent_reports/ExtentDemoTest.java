@@ -23,7 +23,7 @@ public class ExtentDemoTest {
         report = new ExtentReports();  //object
 
         //create a report path-->where i find my project ready //dynamic way use and make it work in all computers
-        String projectPath = System.getProperty("user.dir");   ///Users/mehmetaltuntas/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/java/Users/mehmetaltuntas/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/java
+        String projectPath = System.getProperty("user.dir");   // //Users/mehmetaltuntas/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/java/Users/mehmetaltuntas/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/java
         String path = projectPath + "/test-output/report.html"; //bir file olusturduk -folder name is test-output , in a real project , we will not have static file name , farkli farkli isimler olacak
                                                      //sol tarafa bak intellj de test output adinda bir dosya ve icindede report.html dosyasi var
                                                      //report.html in uzerinde saga tikla-->reveal in finder--> open it with any browser that you want-->and see the report
@@ -37,7 +37,7 @@ public class ExtentDemoTest {
         htmlReporter.config().setReportName("Vytrack Smoke Test");
 
         //set environment information  (key and value ile calisiyor)
-        report.setSystemInfo("Environment","QA");  //Enviroment internet ortami
+        report.setSystemInfo("Environment","QA");  //Enviroment internet ortami    //k:key     v:value
         report.setSystemInfo("Browser", ConfigurationReader.get("browser")); //it gives me dynamicly browser type
         report.setSystemInfo("OS",System.getProperty("os.name"));
 
@@ -74,9 +74,9 @@ public class ExtentDemoTest {
 
 }
 
-//we can use this in the future projects
+// we can use this in the future projects
 
-//bugun olusturdugumuz bu yapinin belirli kisimlarini testBase e yapistirdik
+// Bugun olusturdugumuz bu yapinin belirli kisimlarini testBase e yapistirdik
 
 
-//synchronized is	A non-access modifier, which specifies that methods can only be accessed by one thread at a time
+// Synchronized is	A non-access modifier, Which specifies that methods can only be accessed by one thread at a time
