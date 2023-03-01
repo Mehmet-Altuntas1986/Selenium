@@ -31,7 +31,8 @@ public class iframeTest {  //iframe divides the webpage ,yani birden fazla html 
 
         //How to switch frames
         //1.Switch using by name or ID attribute of iframe        =>o frame icinde bulunan bir elementin -->name or id String ini parametre olarak sadece kabul ediyor birde index numaaralarini int olarak
-//gitmek istedigin frame icinde bir elementin id veya name ini sec
+
+  //gitmek istedigin frame icinde bir elementin id veya name ini sec
         driver.switchTo().frame("");  //diyelimki burda small html e gittik  //burda id kullanildi switch icin   --mce_0_ifr
 
         //clear before sendkeys
@@ -146,3 +147,18 @@ first switch to iframe then find element or elements.
 
  */
 
+/*
+Switching back to Main Page
+The main page is where all the iframes are embedded. After operating on a particular iframe,  use switchTo().parentFrame to move back to the page page.  Use switchTo().defaultContent to shift to the primary/first parent frame. Refer to the sample code below:
+
+WebDriver driver = new ChromeDriver();
+driver.get("URL");// URL OF WEBPAGE HAVING FRAMES
+//First finding the element using any of locator strategy
+WebElement iframeElement = driver.findElement(By.id("iFrameResult"));
+//now using the switch command to switch to main frame.
+driver.switchTo().frame(0);
+//Perform all the required tasks in the frame 0
+//Switching back to the main window
+driver.switchTo().defaultContent();
+driver.quit();
+ */

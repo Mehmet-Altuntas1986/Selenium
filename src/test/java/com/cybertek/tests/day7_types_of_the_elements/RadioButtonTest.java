@@ -24,7 +24,7 @@ public class RadioButtonTest {
         System.out.println( "redRadioBtn.isSelected() = " + redRadioBtn.isSelected() );
                                                        //  redRadioBtn.isSelected().soutv -->click
 
-//verify blue is selected
+        // verify blue is selected
         //blue --> true
         //red  --> false
                                //blue button seciliyken bu islemi yaptik

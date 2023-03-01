@@ -12,5 +12,11 @@ public class CallWebDriverFactory {  //WebDriverFactory adinda onceden bir class
         String title=driver.getTitle();
         System.out.println( "title = " + title );  //soutv + enter  short cut
 
+
     }
 }
+
+/*driver in aktif olmasi icin
+WebDriverManager.chromedriver().setup(); //set browser
+ WebDriver driver=new ChromeDriver();
+  */

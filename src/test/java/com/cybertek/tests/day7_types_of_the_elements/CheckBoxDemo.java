@@ -28,7 +28,7 @@ public class CheckBoxDemo { //bazen check box in yanindaki yaziya tiklayinca ota
         //verify after click
 
         Assert.assertTrue( checkbox1.isSelected(),"verify checkbox 1 is  selected" );
-      // Assert.assertTrue( checkbox1.isSelected(),"verify checkbox 2 is  selected" );
+        // Assert.assertTrue( checkbox1.isSelected(),"verify checkbox 2 is  selected" );
 
         Thread.sleep( 2000 );
         driver.quit();

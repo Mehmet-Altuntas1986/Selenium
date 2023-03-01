@@ -46,7 +46,7 @@ public class JavaScriptExecuterDemo {
 
         String text = "Hello Disabled Input";  //locate ettigimiz Box in icindeki yazi
 
-        jse.executeScript("arguments[0].setAttribute('value', '" + text +"')", inputBox);   //inputBox IS Weblement
+        jse.executeScript("arguments[0].setAttribute('value', '" + text +"')", inputBox);   //inputBox IS Weblement  -->setAttribute(name, value)
 
     }
     @Test

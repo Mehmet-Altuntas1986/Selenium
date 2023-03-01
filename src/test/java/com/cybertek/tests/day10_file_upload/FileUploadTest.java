@@ -37,17 +37,18 @@ public class FileUploadTest {
                                                                                     //fakat burda soyle bir sorun var bu code un aynisi baska bilgisayarda calismaz ,
 
 
-        //clicking upload button
+        // clicking upload button
         driver.findElement(By.id("file-submit")).click();
 
-        //getting the file name from browser
+        // getting the file name from browser
         String actualFileName= driver.findElement(By.id("uploaded-files")).getText();
-        //verify file name is file.txt
+
+        // verify file name is file.txt
         Assert.assertEquals(actualFileName,"file.txt");
 
     }
-          //masa ustunde file.txt adinda bir belge olusturduk,
-          // bu belgeyi masaustunde saga tikla-->getinfi--->where kismindan kopyala /Users/mehmetaltuntas/Desktop sonra bir slash koy ve file ismini yaz
+          // masa ustunde file.txt adinda bir belge olusturduk,
+          // bu belgeyi masaustunde saga tikla-->get info--->where kismindan kopyala path i --> /Users/mehmetaltuntas/Desktop sonra bir slash koy ve file ismini yaz
     @Test
     public void test2(){
         driver.get("http://practice.cybertekschool.com/upload");
@@ -68,6 +69,7 @@ public class FileUploadTest {
 
         //getting the file name from browser
         String actualFileName= driver.findElement(By.id("uploaded-files")).getText();
+
         //verify file name is file.txt
         Assert.assertEquals(actualFileName,"textfile.txt");
 

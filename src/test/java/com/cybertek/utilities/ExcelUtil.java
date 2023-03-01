@@ -70,8 +70,8 @@ public class ExcelUtil {   //r class
 
         String[][] data = new String[rowCount()-1][columnCount()];
 
-        for (int i = 1; i < rowCount(); i++) {
-            for (int j = 0; j < columnCount(); j++) {
+        for (int i = 1; i < rowCount(); i++) {            //firsr for --> row
+            for (int j = 0; j < columnCount(); j++) {     //second for --> column
                 String value = getCellData(i, j);
                 data[i-1][j] = value;
             }
@@ -90,7 +90,7 @@ public class ExcelUtil {   //r class
             // get each row
             Row row = workSheet.getRow(i);
             // create map of the row using the column and value
-            // column map key, cell value --> map bvalue
+            // column map key, cell value --> map value
             Map<String, String> rowMap = new HashMap<String, String>();
             for (Cell cell : row) {
                 int columnIndex = cell.getColumnIndex();

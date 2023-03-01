@@ -25,7 +25,7 @@ searchBox.sendKeys( "Selenium" );
 //Click search button
 driver.findElement( By.xpath( "//input[@value='Go']" ) ).click();
 
-WebElement result=driver.findElement( By.xpath( "//span[contains(text(),'results for')]" ) );  //1-48 of 187 results for "SELENIUM"
+        WebElement result=driver.findElement( By.xpath( "//span[contains(text(),'results for')]" ) );  //1-48 of 187 results for "SELENIUM"
                                                          // NORMALDE BUNA BENZER BIR TEXT AMA BEN DEGISMEYEN KISMI KULLANDIM CUNKU ILERDE RAKAMLAR DEGISEBILIR
 String resultText=result.getText(); //secilen elementin web sitesindeki ismini veriyor
 

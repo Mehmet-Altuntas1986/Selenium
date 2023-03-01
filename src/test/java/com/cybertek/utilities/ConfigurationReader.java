@@ -20,25 +20,25 @@ public class ConfigurationReader {  //reponsibility of this class is finding con
             String filePath = "configuration.properties";                            // path of properties file as a string
             // read the file into java, finds the file using the string path
             FileInputStream input = new FileInputStream(filePath);
-            // properties --> class that store properties in key / value format
+            // Properties --> class that store properties in key / value format
             properties = new Properties();
 
             // the values from the file input is loaded / fed in to the properties object
             properties.load(input);  //loading the properties class//input represents configuration.properties file
 
             input.close();
+
         } catch (Exception e) {
             e.printStackTrace();
 
         }
     }
 
-    public static String get(String keyName) {  //why static method? --> you dont need to create abject to call the method , you can just call directly from the class
-                                                //ConfigurationReader.get.. ornegin
+    public static String get(String keyName) {  // Why static method? --> you dont need to create abject to call the method , you can just call directly from the class
+                                                // ConfigurationReader.get.. ornegin
 
         return properties.getProperty(keyName);   //key ler configuration.properties class inda esitligin solunda bulunananlar
     }
-
 
 }
 

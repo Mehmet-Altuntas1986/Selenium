@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class classNameTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 
         WebDriver driver= WebDriverFactory.getDriver( "chrome" );
@@ -15,11 +15,13 @@ public class classNameTest {
     //class locator da birden fazla sayida olabilir, 1. olani sec bu durumda
 
         WebElement homeLink =driver.findElement( By.className("nav-link") );
+
         homeLink.click();
+
 
         driver.get(  "http://practice.cybertekschool.com/multiple_buttons" ); // inspect yapinca--->   <h3 class="h3">Multiple buttons</h3>
                                                                             // h3 tag ve class tag ikiside bu multiple buttons i gosteriyor
-//print multiple buttons header
+ //print multiple buttons header    --> click edince Multiple buttons isminde bir header var onu locate et ve get text() deyince simini yadirabilirsin
         System.out.println( driver.findElement( By.className( "h3" ) ).getText()); //Multiple buttons //getText ve getAttribute kullanilabiliyor
      //[[ChromeDriver: chrome on MAC (98b5c98cce352f3107dc1d2612662b33)] -> class name: h3] yukarida gettext i kullanmazsak bunu consolda goruruz--reference
 

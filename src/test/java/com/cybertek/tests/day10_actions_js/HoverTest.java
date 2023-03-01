@@ -49,7 +49,7 @@ public class HoverTest {    //hover over: uzerinde gezinmek
     }
 
     /**
-     * hover over each image in the website
+     * hover over each image in the website   ---yani resmin uzerine mouse yi getir
      * verify each name:user text is displayed
      */
     @Test

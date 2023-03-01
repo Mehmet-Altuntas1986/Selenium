@@ -20,7 +20,7 @@ public class NegativeLoginTest extends TestBase {  //login test inin negativini 
         Assert.assertEquals(driver.getCurrentUrl(),"https://qa1.vytrack.com/user/login");
 
     }
-                        //ogretmen dk 27 de configuration.properties deki degerleri degistirdi ve dediki ayni verileri girin
+          //ogretmen dk 27 de configuration.properties deki degerleri degistirdi ve dediki ayni verileri girin
     @Test
     public void wrongUsernameTest() {
 

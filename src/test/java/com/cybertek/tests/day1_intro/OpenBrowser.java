@@ -10,7 +10,7 @@ public class OpenBrowser {
         //we have to enter this line every time we want to open chrome
         // hey webdrivermanager, can you make chrome ready for automation
 
-                                                  // System.setProperty( "webdriver.driver.chrome" ,"chromedriver"); //windows bilgisayarlarda path kisminin sonu .exe koymalisin
+        // System.setProperty( "webdriver.driver.chrome" ,"chromedriver"); //windows bilgisayarlarda path kisminin sonu .exe koymalisin
         WebDriverManager.chromedriver().setup();   //WebDriverManager is an abstract class --icinde abstract methodlar var
 
         // this below could be used instead  WebDriverManager.chromedriver().setup();
@@ -20,13 +20,13 @@ public class OpenBrowser {
         //we are creating driver for chrome browser
 
         //new chromeDriver()-->this part will open (empty) chrome browser
-        WebDriver driver = new ChromeDriver();  //safari ,Firefox driver da diyebilirim , eger bilgisayarimizda yuklu ise calisirlar
-
+          WebDriver driver = new ChromeDriver();  //safari ,Firefox driver da diyebilirim , eger bilgisayarimizda yuklu ise calisirlar
 
     }
 }
 
 /*
+
 #  WebDriverManager dependency is a library which allows to automate the management of the drivers (e.g. chromedriver, geckodriver, etc.)
   required by Selenium WebDriver.
 
@@ -37,7 +37,7 @@ It matches the version of the driver (e.g. chromedriver, geckodriver). If unknow
 It downloads the driver if it is not present on the WebDriverManager cache (~/.cache/selenium by default).
 It exports the proper WebDriver Java environment variables required by Selenium (not done when using WebDriverManager from the CLI or as a Server).
 WebDriverManager resolves the drivers for the browsers Chrome, Firefox, Edge, Opera, PhantomJS, Internet Explorer, and Chromium.
- For that, it provides several drivers managers for these browsers. These drivers managers can be used as follows:
+   For that, it provides several drivers managers for these browsers. These drivers managers can be used as follows:
 
 WebDriverManager.chromedriver().setup();
 WebDriverManager.firefoxdriver().setup();

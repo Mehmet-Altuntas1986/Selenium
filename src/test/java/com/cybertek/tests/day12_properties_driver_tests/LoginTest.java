@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {  //sadece extends testBase yazdim baglanti icin//Login test parantezinin icine PropertiesTest classindan line 27_43 arasini kopyaladim , sonra biraz degisiklik yaptim
 
-    //comment li kisim normalde testbase sinifi olmasa gerekli ama herbir test case icin yazmak isleri zorlastirir. bu nedenle
+    //asagidaki comment li kisim normalde testbase sinifi olmasa gerekli ama herbir test case icin yazmak isleri zorlastirir. bu nedenle
     // testbase adinda bir class acip before and after method kismini oraya yapistirirsam ve classlar arasinda
     // ki baglantiyida inheritance ile extend edip saglarsam isler kolaylasir
 
@@ -16,7 +16,7 @@ public class LoginTest extends TestBase {  //sadece extends testBase yazdim bagl
 
     @BeforeMethod
     public void setUp(){
-        driver = Driver.get();   // bu kismi degistirerek  dynamic bir yapi olusturdum //artik WebDriverFactory.getDriver("chrome");
+        driver = Driver.get();   // bu kismi degistirerek  dynamic bir yapi olusturdum //artik WebDriverFactory.getDriver("chrome"); kullanmayacagiz
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
@@ -47,6 +47,9 @@ public class LoginTest extends TestBase {  //sadece extends testBase yazdim bagl
 
 }
 
-//pages websitesine ozel , baska bir websitesinde is gormez, ona gore duzenlemeliyiz , baska bir web sitesi icin degisiklikler yapmaliyiz, yeniden duzenlemeliyiz
-//utilities herturlu websitesinde isimize yarar , kullanabiliriz degisiklik yapmadan
-//BasePage de websitesine ozel ,general structure lari tabikide kullanabiliriz , baska bir websitesi icin duzenlenmesi gerekir
+ /* pages websitesine ozel , baska bir websitesinde is gormez, ona gore duzenlemeliyiz , baska bir web sitesi icin
+    degisiklikler yapmaliyiz, yeniden duzenlemeliyiz*/
+
+//  utilities herturlu websitesinde isimize yarar , kullanabiliriz degisiklik yapmadan
+
+//  BasePage de websitesine ozel ,general structure lari tabikide kullanabiliriz , baska bir websitesi icin duzenlenmesi gerekir

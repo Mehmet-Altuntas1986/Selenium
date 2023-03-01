@@ -11,7 +11,7 @@ public class css_locator {
         driver.get( "http://practice.cybertekschool.com/multiple_buttons" );
 
         WebElement dontClick=driver.findElement( By.cssSelector("#disappearing_button") );    //TagName#idValue
-                                                                                                //    # ->this symbol looking for ID
+                                                                                              //# ->this symbol looking for ID
 
         System.out.println(dontClick.getText());
         driver.quit();

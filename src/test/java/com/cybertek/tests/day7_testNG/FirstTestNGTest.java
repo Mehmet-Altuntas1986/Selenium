@@ -11,7 +11,7 @@ public class FirstTestNGTest {
         System.out.println( "my first test case" );
     }
 
-    @Test
+    @Test                   //every test is independant from others
     public void test2() { //this is like we 2 main methods in the same class , and for each we have run button
         System.out.println( "my first test case" );
     }

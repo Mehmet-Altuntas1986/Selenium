@@ -43,7 +43,7 @@ public class ExtentDemoTest {
 
     }
 
-    @Test
+     @Test
     public void test1(){
         //give name to current test
         extentLogger= report.createTest("TC123 Login as Driver Test");  //write test name here
@@ -65,7 +65,7 @@ public class ExtentDemoTest {
     }
 
 
-    @AfterMethod
+     @AfterMethod
     public void teardown(){
         //this is when the report is actually created
         report.flush();

@@ -17,7 +17,7 @@ public class DDFWithDataProvider {
     }
 
 
-    @Test(dataProvider ="testData")  //ustteki i annotation ile baglanti kuruldu
+    @Test(dataProvider ="testData")  //ustteki i annotation methodu  ile baglanti kuruldu
     public void test1(String tvshow,String rating){
         System.out.println("Tv show: "+tvshow +" has rating "+rating);
 

@@ -26,13 +26,13 @@ public class WebTablesExample { //class seviyesindeki ok a tiklarsak butun test 
 
 //    @AfterMethod
 //    public void tearDown() throws InterruptedException {
-//        Thread.sleep(2000);
-//        driver.quit();
+//    Thread.sleep(2000);
+//    driver.quit();
 //    }
 
     @Test
     public void printTable(){
-        WebElement table = driver.findElement(By.xpath("//table[@id='table1']"));  //WebElement is an intereface in java .util package
+        WebElement table = driver.findElement(By.xpath("//table[@id='table1']"));  //WebElement is an intereface in java.util package
 
         System.out.println(table.getText());  //table 1 de everything in the string appears in the console ( last name ........edit delete e kadarki kisma bak
 
@@ -70,7 +70,7 @@ public class WebTablesExample { //class seviyesindeki ok a tiklarsak butun test 
     @Test
     public void getRow(){
         //print the second row (yatay siralar) information -
-        WebElement row2 = driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[2]"));  //inspecte tr lar row lari veriyor
+        WebElement row2 = driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[2]"));  //inspect-e tr lar row lari veriyor
 
         //System.out.println(row2.getText());  //Bach Frank fbach@yahoo.com $51.00  --->consolda bak row 2 nin text inin yazdirdi
 

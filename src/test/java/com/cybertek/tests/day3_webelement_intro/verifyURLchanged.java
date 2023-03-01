@@ -12,7 +12,7 @@ public class verifyURLchanged {
         go to http://practice.cybertekschool.com/forgot_password Links to an external site.
         enter any email
         click on Retrieve password
-        verify that url changed to http://practice.cybertekschool.com/email_sent
+        verify that url changed to http://practice.cybertekschool.com/email_sent    --> yani bu expected         --<actual i bul ve karsilastir
       */
 
         // 1-  open chrome browser    //utilities package inin icinde WebDriverFactory adinda methodumuz var, o methodu incele
@@ -34,14 +34,16 @@ public class verifyURLchanged {
         //hata verirse Thread.sleep exception nin uzerine tikla
 
 
-        //5-        verify that url changed to http://practice.cybertekschool.com/email_sent
+        //5- verify that url changed to http://practice.cybertekschool.com/email_sent
 
         String expectedUrl = "http://practice.cybertekschool.com/email_sent";
 
         //saving actual url from browser after we enter any email and click retrieve password button
         String actualUrl = driver.getCurrentUrl();
+
         if (expectedUrl.equals( actualUrl )) {                                                  //actual url test sonucu ortaya cikan url
-            System.out.println( "PASS" );    //"PASS".sout+enter tusuna bas-->kisa yol
+            System.out.println( "PASS" );    //      "PASS".sout+enter tusuna bas-->kisa yol
+
 
         } else {
             System.out.println( "FAIL" );                           //fark varmi gorebilmek icin asagidakileri ekledim

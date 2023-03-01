@@ -8,7 +8,8 @@ public class Singleton {  //using the same object everywhere in the application
 
     private static String str;
 
-    public static String getInstance(){
+    public static String getInstance(){   //Diger class larda bu class ile object olusturulamaz, cunku constructor private
+                                          //ama bu class in ismiyle bu methodu herhangi bir yerde cagirabiliriz ,cunku static bir method
 
         //if str has no value, initialize it and return it
         if(str==null){

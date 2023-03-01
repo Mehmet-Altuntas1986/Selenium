@@ -38,7 +38,7 @@ public class tagNameLocator
 #selenium reads the source from top to bottom. if your locater matched with one webelement, selenium stops there.
 
                  //if there is no id or name, we can use tagname based on two conditions
-                 1_ tag should be used only one time
+                  1_ tag should be used only one time
                   2_there are multiple same tags but you want to point the first tag
                we cannot use index when we use tagName locater. if there are multiple usage of same tag, we cannot point the second one, first one we should choose
 if id is dynamic and name isd multiple, we cannot use them, instead we use other locators

@@ -93,17 +93,19 @@ In other words, map the elements to the variables in the LoginPage class
 *The initElements() method takes the driver object created in the test and initializes the elements
 declared in the LoginPage class. We can then directly call the methods on these elements, as follows:
 
-The FindBy annotations:
+        The FindBy annotations:
 Using the FindBy annotation,we can locate the elements within the PageFactory class, as on the picture.
 We declared a public member for the login button element and used the @FindBy annotation, specifying the id as
 a locator for finding this element on the page
 
-The FindAll annotations When required WebElement objects needs to match at least one of the given criteria use
-@FindAll annotation
+       The FindAll annotations          @FindAll annotation
+       When required WebElement objects needs to match at least one of the given criteria use
 
-The FindBys annotations:
+
+
+   The FindBys annotations:   @FindBys annotation
 When the required WebElement objects needs to match all of the given criteria use
-@FindBys annotation
+
 
 The CacheLookUp attribute:
 One downside to using the @FindBy annotation is
@@ -120,8 +122,7 @@ find it. In order to do this, we use the
 @CacheLookUp annotation along with the @FindBy
 annotation.
 This tells the PageFactory.initElements() method to
-cache the element once it’s located. Tests work
-faster with cached elements when these elements
+cache the element once it’s located. **** Tests work  faster with cached elements when these elements
 are used repeatedly.
 @FindBy(id = "prependedInput")
 @CacheLookup
@@ -130,7 +131,7 @@ public WebElement uaserNameInput;
 @CacheLookup
 public WebElement passwordInput;
 @FindBy(id = "_submit")
-@CacheLooku
+@CacheLookup
 
 Advantages of Page Object Model:
 !17
@@ -165,7 +166,7 @@ configuration.properties
 
 POM is best applicable for the applications which contain multiple pages.
 Each of which have fields which can be uniquely referenced with respect to the page.
- */
+
 
 
 
@@ -178,5 +179,5 @@ initialization is the process of storing data into an object.
 /*
 InitElement() – is used to initialize the WebElements declared, using driver instance from the main class.
 In other words, WebElements are created using the driver instance. Only after the WebElements are initialized,
- they can be used in the methods to perform actions.
+they can be used in the methods to perform actions.
  */

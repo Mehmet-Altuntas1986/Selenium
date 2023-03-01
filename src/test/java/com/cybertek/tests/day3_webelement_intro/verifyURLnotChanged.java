@@ -47,7 +47,7 @@ public class verifyURLnotChanged {
 
 
 
-              //5-close your browser (gecmis aktivitelerimizi de gostermez bir sonraki acisimizda cunku quit i kullaniyoruz)
+          //5-close your browser (gecmis aktivitelerimizi de gostermez bir sonraki acisimizda cunku quit i kullaniyoruz)
           driver.quit();
       }
     }

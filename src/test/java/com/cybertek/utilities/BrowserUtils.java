@@ -78,7 +78,8 @@ public class BrowserUtils {
             elemTexts.add(el.getText());
         }
         return elemTexts;
-    }
+     }
+    /**
 
     /**
      * Extracts text from list of elements matching the provided locator into new List<String>

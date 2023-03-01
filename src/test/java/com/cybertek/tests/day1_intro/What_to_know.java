@@ -34,7 +34,7 @@ Find elements return an empty list of web elements if elements not available in 
 To identify a specific color, data, or accurate row data in dynamic web table, we use find Elements() method.
 WebDriver:
 
-A WebDriver is an interface that extends the search context interface, and multiple browser subclasses implement it.
+****A WebDriver is an interface that extends the search context interface, and multiple browser subclasses implement it.
 WebDriver has many abstract methods like close(), quit(), get(), etc. and the web driver has also nested interface like navigation, window, timeouts, etc.
 To perform some specific operations with the help of nested interfaces like back(), refresh(), forward(), etc.
 And the entire WebDriver tool is converted as a jar file, which is uploaded by the selenium community.
@@ -52,7 +52,7 @@ And finally, we have browser-specific driver classes available in the selenium W
 The driver classes include Firefox Driver, Chrome Driver, IE Driver, Safari Driver, etc.
 
 WebElement Hierarchy
-Webelement is an interface that extends SearchContext and TakeScreenShot interfaces.
+*** Webelement is an interface that extends SearchContext and TakeScreenShot interfaces.
 
 These interfaces contains several controls like click(), sendKeys(), getText() etc. which can be used  after findElement() method.
 
@@ -62,7 +62,8 @@ The SearchContext interface has been described in the class which includes findE
 
 Web Element:
 
-To perform any action on webelement like click(),isSelected(), getText() methods, we will use the overriding concept because all the abstract methods available in WebDriver are overridden.
+To perform any action on webelement like click(),isSelected(), getText() methods, we will use the overriding concept because
+all the abstract methods available in WebDriver are overridden.
 
 Remote webelement:
 

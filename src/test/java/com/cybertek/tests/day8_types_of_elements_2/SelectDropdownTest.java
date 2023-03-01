@@ -39,19 +39,19 @@ public class SelectDropdownTest {
         //Select yazinca otomatik cikiyor bu sinif, bu sinifla bir object olusturalim
 
         Select stateDropdown = new Select(dropdownElement);  //connection between the stateDropdown object and constructer --(dropdownElement)
-                                       //   Webelementi parantez icine koymayinca hata veriyor
+                                                             //   WebElement-i parantez icine koymayinca hata veriyor
 
 
-        //getOptions --> returns all the available options from the dropdown
+        //getOptions --> Returns all the available options from the dropdown
         List<WebElement> options = stateDropdown.getOptions();
+
         //print size of the options
         System.out.println("options.size() = " + options.size());
 
-        //print options one by one
+          //print options one by one
         for (WebElement option : options) {
             System.out.println(option.getText());  //hepsini consolda yazdirdi donguyle
         }
-
     }
 
 
@@ -98,5 +98,4 @@ public class SelectDropdownTest {
         actualOption = stateDropdown.getFirstSelectedOption().getText();
         Assert.assertEquals(actualOption,expectedOption,"verify first selection");
     }
-
 }

@@ -36,6 +36,6 @@ public class CloseAndQuit {
     }
 }
 
-//console u okuyabilmek onemli
-//consolda onemli bir kelime var ona odaklan --->Exception   birde en sona gidip blue renkte olan yazilara tiklayip
+// console u okuyabilmek onemli
+// consolda onemli bir kelime var ona odaklan --->Exception   birde en sona gidip blue renkte olan yazilara tiklayip
 // ornegin en sonda mavi renkteki yazi (CloseAndQuit.java:22 ) bu su manada line 22 de bir hata var

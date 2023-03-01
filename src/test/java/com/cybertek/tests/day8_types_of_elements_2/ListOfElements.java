@@ -13,14 +13,14 @@ import java.util.List;
 
 public class ListOfElements {
 
-    WebDriver driver;  //asagidaki methodlarin da bu driver i kullanabilmesi icin methodlarin disinda buraya koyuldu
+    WebDriver driver;  // asagidaki methodlarin da bu driver i kullanabilmesi icin methodlarin disinda buraya koyuldu
 
     @BeforeMethod
     public void setUp(){
         driver = WebDriverFactory.getDriver("chrome");
     }
 
-    @AfterMethod  ////if test fails, it will also close the browser, that is why it is important
+    @AfterMethod  //if test fails, it will also close the browser, that is why it is important
     public void tearDown() throws InterruptedException {
         Thread.sleep(2000);
         driver.quit();

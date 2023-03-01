@@ -97,7 +97,7 @@ public abstract class BasePage {  // it gives common locaters and methods betwee
         //     String moduleLocator2 = "//span[@class='title title-level-2' and contains(text(),'"+ module + "')]";
         try {
             BrowserUtils.waitForClickablility(By.xpath(tabLocator), 5);
-            WebElement tabElement = Driver.get().findElement(By.xpath(tabLocator));
+            WebElement tabElement = Driver.get().findElement(By.xpath(tabLocator));   //Driver.get() -->returns driver
             new Actions(Driver.get()).moveToElement(tabElement).pause(200).doubleClick(tabElement).build().perform();
          }catch (Exception e) {
             BrowserUtils.clickWithWait(By.xpath(tabLocator), 5);  //
@@ -118,16 +118,15 @@ public abstract class BasePage {  // it gives common locaters and methods betwee
 //BasePage is unique to app   --bu sayfayi bir organize etmeliyiz
 //Pages package indaki diger classlar extends BasePage
 
-/*Abstraction
+/*
+Abstraction
 we have and abstract basepage where we put the logic to common all the page object classes. my page object classes
  extend the base class. when we create object of the any page object, we can access the method from abstract class.
  */
 
 
 /*
-An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract classes
+   An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract classes
  cannot be instantiated, but they can be subclassed.
-
-
 
  */

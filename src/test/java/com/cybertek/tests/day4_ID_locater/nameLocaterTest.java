@@ -20,7 +20,7 @@ public class nameLocaterTest {
         Thread.sleep( 2000 ); //2 sn ye bekle --> ben koydum buraya
         fullNameInput.sendKeys( "Mike Smith" );  //full name isimli box un icine bu deger gidecek, bir nevi yazmis olacagim
 
- //TASK:put some email and click sign up button
+      //TASK:put some email and click sign up button
 
       //proper way
         WebElement emailInput= driver.findElement( By.name( "email" ) );

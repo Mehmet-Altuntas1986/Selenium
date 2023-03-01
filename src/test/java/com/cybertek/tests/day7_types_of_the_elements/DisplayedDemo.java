@@ -12,13 +12,13 @@ public class DisplayedDemo {
 @Test
 public void test1() throws InterruptedException {
     WebDriver driver= WebDriverFactory.getDriver( "CHROME" );
-    driver.get( "http://practice.cybertekschool.com/dynamic_loading/1" );
+    driver.get( "http://practice.cybertekschool.com/dynamic_loading/1" );  //start button unu gosteriyor, tiklaninca username inputbox ve password inputbox beliriyor
     WebElement usernameInput=driver.findElement( By.id("username") );
 
-    System.out.println( "usernameInput.isDisplayed() = " + usernameInput.isDisplayed() );
-    //task
+    System.out.println( "usernameInput.isDisplayed() = " + usernameInput.isDisplayed() );   //(start buttonuna tiklamadigimiz icin gozukmuyor)
+    // task
     // 1-verify username inputbox is not displayed on the screen
-    //2-click start button
+    // 2-click start button
     // 3-verify username displayed on the screen
 
 

@@ -17,7 +17,7 @@ public class TestNGassertionsDemo {
         System.out.println("second assertion");
         Assert.assertEquals( "url","url" );
 
-        //CLOSE EGER FIRST ASSERTION DA ESLESME HATA VERDIYSE NASIL KAPATACAGIZ--> AFTERMETHOD U KULLANARAK --> CUNKU FAIL OLSA BILE HERHANGI BIR TESTTE BU METHOD RUN OLUR
+        // CLOSE EGER FIRST ASSERTION DA ESLESME HATA VERDIYSE NASIL KAPATACAGIZ --> AFTERMETHOD U KULLANARAK --> CUNKU FAIL OLSA BILE HERHANGI BIR TESTTE BU METHOD RUN OLUR
 
 
     }
@@ -58,7 +58,7 @@ public class TestNGassertionsDemo {
 
 
 
-//whether your testcase fail or not , your before and after method will executed always. bu methodlarla quit and close yapabiliriz
+//whether your testcase fail or not , your before and after method will be executed always. bu methodlarla quit and close yapabiliriz
     @BeforeMethod
     public void setUp(){
         System.out.println("open browser");
@@ -71,3 +71,5 @@ public class TestNGassertionsDemo {
     }
 
 }
+
+//in testNg  Assert class i var , bu Assert.    diyerek bu clasin methodlarina ulasabiliriz

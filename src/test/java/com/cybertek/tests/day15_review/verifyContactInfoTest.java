@@ -86,7 +86,7 @@ public class verifyContactInfoTest extends TestBase {  //ilk once manuel olarak 
 
 ////google-->testng -->documentation-->txt konusunu acti  -->textng.xml konubasligina git ve ilk bolgeyi kullaniyoruz
 
-//tESTNG_runner.xml ile koymus oldugumuz testleri paketler ve icindeki butun test annotations lerle birlikte test edebiliriz .---> sol taraftaki file larin uzerine gel , sag tikla -->
+//TESTNG_runner.xml ile koymus oldugumuz testleri paketler ve icindeki butun test annotations lerle birlikte test edebiliriz .---> sol taraftaki file larin uzerine gel , sag tikla -->
 //-->copy path--> copy reference  de sonra hazir yapiya tirnak isaretletri arasinda ekle  ornegin       <package name="com.cybertek.tests.day11_webtables">      </package>
 
 //dk 2. somoke test icin dosyalarin icindeki classes seciliyor ve testng_runner a koyuluyor

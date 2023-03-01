@@ -29,18 +29,22 @@ public class verifyConfirmationMessage {
         WebElement emailInputBox = driver.findElement(By.name("email"));  //id veya name i inspectordan bul   //esitligin sag tarafini yaz+option+enter a tikla esitligin sol tarafini otomatik
                                                                          // olusturur, sonra ismi duzenleyebilirsin
 
-        String expectedEmail = "mike@smith.com";
+        String expectedEmail = "mike@smith.com";   //box in icine atacagiz ve sonra getAttribute ile elde edilenin aynimi oldugunu kontrol edecegiz
 
         //sendKeys()--> send keyboard action to the webelement
         emailInputBox.sendKeys(expectedEmail);  //parantezin icine buda yazilabilir , sikinti olmaz   //sendKeys methodu ile bu email inputboxin icine gider ve sanki biz oraya yazmis gibi olur
 
 
         //somehow we should get text (herhangi bir yazi ) from web elements
+
         //two main ways to get txt from web elements
         //1.getText()--> it will work %99 and it will return string  -->input box in ici icin  2.yolu kullanacagiz
         //2.getAttribute("value") --> second way of getting text especially input boxes
 
-        String actualEmail = emailInputBox.getAttribute("value");
+        String actualEmail = emailInputBox.getAttribute( "value" );   //"value" dedigimizde otomatik olarak locate ettgimiz element in ismini verir
+                                                                            //value degilde inspecte ki attribute larin ismini kullanirsak bize attribute value sini verir
+
+
         System.out.println("actualEmail = " + actualEmail);
 
         //verify that email is displayed in the input box
@@ -79,3 +83,18 @@ public class verifyConfirmationMessage {
         //consol da exception i bul , hata varsa o gosterecektir --->blue line hatayi gosterecektir , blue line nin uzerine tikla
     }
 }
+
+
+/*
+String getAttribute(String name);
+
+
+   * Determine whether or not this element is selected or not. This operation only applies to input
+    elements such as checkboxes, options in a select and radio buttons.
+    For more information on which elements this method supports,
+   * refer to the <a href="https://w3c.github.io/webdriver/webdriver-spec.html#is-element-selected">specification</a>.
+   *
+   * @return True if the element is currently selected or checked, false otherwise.
+
+
+ */

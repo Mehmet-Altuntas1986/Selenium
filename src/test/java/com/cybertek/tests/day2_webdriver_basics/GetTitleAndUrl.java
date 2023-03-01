@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GetTitleAndUrl {
     public static void main(String[] args) {
-        //tASK OPEN CHROME AND NAVIGATE TO http://practice.cybertekschool.com
+        //TASK OPEN CHROME AND NAVIGATE TO http://practice.cybertekschool.com
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();

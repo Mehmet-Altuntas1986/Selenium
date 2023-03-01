@@ -18,22 +18,24 @@ public class AttributeTest {
 
         blueRadioBtn.getAttribute( "value" ); //getAttribute method is not only limited with the value , you can retrieve all the attribute value
                                                    //blue radiobutton i inspect yap
+
          //get the value of type attribute
          System.out.println( blueRadioBtn.getAttribute( "type" ) );  //  radio
 
         //get the value of name attribute
+                                                          // <input type="radio" id="blue" name="color" checked="">
+         System.out.println( blueRadioBtn.getAttribute( "name" ) ); //color
 
-         System.out.println( blueRadioBtn.getAttribute( "name" ) ); //color        <input type="radio" id="blue" name="color" checked="">
 
 
         //get the value of checked attribute   -->true or false , this attribute has no value
-         System.out.println( blueRadioBtn.getAttribute("checked") ); //true  //console da true yada false yazar
+         System.out.println( blueRadioBtn.getAttribute("checked") ); //true  //console da true yada false yazar       // <input type="radio" id="blue" name="color" checked="">
 
         //trying to get attribute that doesnt exist
         //when we use non exist attribute it will return null to us
          System.out.println( blueRadioBtn.getAttribute( "href" ) ); //null   --- it return false or something else in console -->null
 
-         System.out.println( blueRadioBtn.getAttribute( "outerHTML" ) );//outerHTML IS NOT AN ATTRIBUTE
+         System.out.println( blueRadioBtn.getAttribute( "outerHTML" ) );//outerHTML IS NOT AN ATTRIBUTE  ****
                                                                             //CONSOLDA <input type="radio" id="blue" name="color" checked=""> YAZI BELIRIR
 
 
@@ -45,7 +47,7 @@ public class AttributeTest {
 
 
 
-        // <button class="btn btn-primary" onclick="button1()">Button 1</button>
+                                      // <button class="btn btn-primary" onclick="button1()">Button 1</button>
         driver.get( "http://practice.cybertekschool.com/multiple_buttons" );
         WebElement button2=driver.findElement( By.name( "button2" ) );
 
@@ -74,8 +76,9 @@ public class AttributeTest {
 
 }
 // innerHTML ILE INSPECTE RENKLENDIRILMIS ELEMENT TAG LARI ARASINDAKI TEXT LI KISMI ALGILIYOR    (ATTRIBUTE DEGERLERINI DEGIL)
-//outerHTML ISE ELEMNTI TEMSIL EDEN RENKLI INSPECT KISMINI TAMAMEN ICINE ALIYOR
+// outerHTML ISE ELEMNTI TEMSIL EDEN RENKLI INSPECT KISMINI TAMAMEN ICINE ALIYOR
 /*
 innerHTML is a property of every element. It tells you what is between the starting and ending tags of the element,
  and it also let you sets the content of the element. property describes an aspect of an object. It is something an object has as opposed to something an object does.
+
  */

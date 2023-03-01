@@ -50,6 +50,7 @@ one window to another in a web application. Its return type is Iterator<String>.
         Set<String> windowHandles = driver.getWindowHandles(); //this method will get all the windows open at that time handle , this set removes duplicate values,
         // only takes unique values and it doesnt care index , order ,siralama yapmaz 1.button, 2. button diye
         // getwindowshandles methodunda index kullanilamaz
+
 // if i have two windows , how i will switch to other one?
         for (String handle : windowHandles) {
 
@@ -81,7 +82,7 @@ one window to another in a web application. Its return type is Iterator<String>.
             //whenever your title equals to your expected window title
             if (driver.getTitle().equals( "New Window" )) {
                 //stop on that window
-                break;
+                break;  //loop un disina cik
             }
 
         }

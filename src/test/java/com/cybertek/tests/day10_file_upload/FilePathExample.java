@@ -11,12 +11,17 @@ public class FilePathExample {
         // /Users/jamaldemir/IdeaProjects/fromgit/EU3TestNGSelenium src/test/resources/textfile.txt;      ==> yukardakinden bir slash eksik
         //System.out.println(System.getProperty("user.dir"));
         System.out.println( System.getProperty( "os.name" ) );
+
+        //Write project file path
         String projectPath = System.getProperty( "user.dir" );  //gives you your project location folder --> cunku butun bilgisayarlarda calismasini istiyorum
         System.out.println( "projectPath = " + projectPath );
 
+        //Write the file path in your project
         String filePath = "src/test/resources/textfile.txt"; //click (under resources) textfile.txt --> copypath--> choose repository or content root ==>bu bir static path,
         // bende calsir ama baskasinin bilgisayarinda is gormez
 
+
+        //project path + any file path in project   ---> Dynamic --> can be used in all computers
         String fullPath = projectPath + "/" + filePath;
         System.out.println( fullPath );
     }
