@@ -38,12 +38,12 @@ public class SelectDropdownTest {
         //2.create Select object by passing that element as a constructor //SELENIUM HAS A SPECIAL CLASS WHICH IS Select
         //Select yazinca otomatik cikiyor bu sinif, bu sinifla bir object olusturalim
 
-        Select stateDropdown = new Select(dropdownElement);  //connection between the stateDropdown object and constructer --(dropdownElement)
+        Select stateDropdownElement = new Select(dropdownElement);  //connection between the stateDropdown object and constructer --(dropdownElement)
                                                              //   WebElement-i parantez icine koymayinca hata veriyor
 
 
         //getOptions --> Returns all the available options from the dropdown
-        List<WebElement> options = stateDropdown.getOptions();
+        List<WebElement> options = stateDropdownElement.getOptions();
 
         //print size of the options
         System.out.println("options.size() = " + options.size());

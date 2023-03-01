@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="">
+    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment=" day 7 de notlar aldim">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/dropdown-5 items .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/dropdown_menu_link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/slect tagi varsa select class i kullanilabilir.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements/DisplayedDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements/DisplayedDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Vytracktestdata.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/textfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements/RadioButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/ListOfElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/ListOfElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/NoSelectDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/NoSelectDropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/SelectDropdownTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2/SelectDropdownTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day7_types_of_the_elements/RadioButtonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day7_types_of_the_elements/RadioButtonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day8_types_of_elements_2/NoSelectDropdown.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day8_types_of_elements_2/NoSelectDropdown.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -52,53 +59,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_actions_js" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_waits" />
-      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_popups_tabs_frames" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DisplayedDemo.test1">
-    <configuration name="AmazonTest_homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day5_xpath_usage.AmazonTest_homework" />
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day5_xpath_usage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day5_xpath_usage.FirstClass" />
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day5_xpath_usage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nameLocaterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day4_ID_locater.nameLocaterTest" />
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day4_ID_locater.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.NoSelectDropdown.test1">
     <configuration name="AttributeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
@@ -135,6 +103,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListOfElements.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day8_types_of_elements_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day8_types_of_elements_2" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day8_types_of_elements_2.ListOfElements" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoSelectDropdown.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day8_types_of_elements_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day8_types_of_elements_2" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day8_types_of_elements_2.NoSelectDropdown" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioButtonTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day7_types_of_the_elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day7_types_of_the_elements" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day7_types_of_the_elements.RadioButtonTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RepeatOptionsTest.test1" type="TestNG" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
@@ -155,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NoSelectDropdown.test1" />
+        <item itemvalue="TestNG.ListOfElements.test1" />
+        <item itemvalue="TestNG.RadioButtonTest.test1" />
         <item itemvalue="TestNG.DisplayedDemo.test1" />
         <item itemvalue="TestNG.AttributeTest.test1" />
-        <item itemvalue="Application.nameLocaterTest" />
-        <item itemvalue="Application.FirstClass" />
-        <item itemvalue="Application.AmazonTest_homework" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +194,14 @@
       <option name="presentableId" value="Default" />
       <updated>1629449527785</updated>
     </task>
+    <task id="LOCAL-00001" summary=" day 7 de notlar aldim">
+      <created>1677692200403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677692200403</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +214,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="displayed demoda notlar aldim" />
+    <MESSAGE value=" day 7 de notlar aldim" />
+    <option name="LAST_COMMIT_MESSAGE" value=" day 7 de notlar aldim" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

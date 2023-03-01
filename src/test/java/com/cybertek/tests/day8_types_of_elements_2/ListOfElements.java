@@ -15,7 +15,7 @@ public class ListOfElements {
 
     WebDriver driver;  // asagidaki methodlarin da bu driver i kullanabilmesi icin methodlarin disinda buraya koyuldu
 
-    @BeforeMethod
+    @BeforeMethod   //runs once  before every test annotation with method
     public void setUp(){
         driver = WebDriverFactory.getDriver("chrome");
     }
@@ -49,7 +49,7 @@ public class ListOfElements {
 
     }
 
-    @Test
+    @Test   //****
     public void test2(){
         driver.get("http://practice.cybertekschool.com/multiple_buttons");  //test lerin icinde sadece driver.get ile
                                                                             // bircok test olusturabiliriz
@@ -70,7 +70,7 @@ public class ListOfElements {
 
     }
 
-//findElements() method does not throw NoSuchElementException, if you locator is wrong it will return you empty list.
+//findElements() method does not throw NoSuchElementException, if your locator is wrong it will return you empty list.
 
 
 }
