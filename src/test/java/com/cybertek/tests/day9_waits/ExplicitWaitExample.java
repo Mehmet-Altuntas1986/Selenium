@@ -40,12 +40,12 @@ public class ExplicitWaitExample {
         //buyuzden explicitwait kullanildi
 
         //create Explicit wait object
-        WebDriverWait wait = new WebDriverWait( driver, 10 ); //buraya 3 sn koysaydik error verirdi, cunku yaklasik 5 sn icinde visible , gorunur oluyor
+        WebDriverWait wait = new WebDriverWait( driver, 10 );  //buraya 3 sn koysaydik error verirdi, cunku yaklasik 5 sn icinde visible , gorunur oluyor
 
-        wait.until( ExpectedConditions.visibilityOf( usernameInput ) ); //visible olana kadar bekliyor , websitesinde ornegin  (parametreye element i koyuyoruz)
+        wait.until( ExpectedConditions.visibilityOf( usernameInput ) );  // visible olana kadar bekliyor , websitesinde ornegin  (parametreye WebElement i koyuyoruz -->usernameInput)
         // biryeri acacagiz ama 5 sn icinde aciliyor, biz sonra gorebiliyoruz
-        //visibiltyOf methodunu kullandik cunku start buttonuna basmadan once inputbox i goremiyorduk, tiklamadan yaklasik 5 sn sonra gorunur oldu
-        //ExpectedConditions is a class ve visibilityOf is a method of this class
+        // visibiltyOf methodunu kullandik cunku start buttonuna basmadan once inputbox i goremiyorduk, tiklamadan yaklasik 5 sn sonra gorunur oldu
+        // ExpectedConditions is a class from java.lang.Object ve visibilityOf is a method of this class
 
 
         usernameInput.sendKeys( "MikeSmith" );
@@ -62,7 +62,7 @@ public class ExplicitWaitExample {
         //finding inputbox
         WebElement inputBox = driver.findElement( By.cssSelector( "#input-example>input" ) );  // > isaretle css de child tag a gecti
 
-        WebDriverWait wait = new WebDriverWait( driver, 10 );  //buraya bekleme suresini az koydugumuzdan test fails
+        WebDriverWait wait = new WebDriverWait( driver, 10 );  //buraya bekleme suresini az koyarsak test fails
                                                                        //consolda: TimeoutException: Expected condition failed: waiting for element to be clickable:
 
         wait.until( ExpectedConditions.elementToBeClickable( inputBox ) );  //burda elementtobeclickable methodunu kullnamamizin sebebi
