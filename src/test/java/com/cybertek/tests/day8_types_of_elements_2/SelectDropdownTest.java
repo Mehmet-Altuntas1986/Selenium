@@ -62,7 +62,7 @@ public class SelectDropdownTest {
         WebElement dropdownElement = driver.findElement(By.id("state"));
 
         //2.create Select object by passing that element as a constructor
-        Select stateDropdown = new Select(dropdownElement);
+        Select stateDropdown = new Select(dropdownElement);  //public class Select extends java.lang.Object
 
         //verify that first selection is 'Select a state'
         String expectedOption = "Select a State";
