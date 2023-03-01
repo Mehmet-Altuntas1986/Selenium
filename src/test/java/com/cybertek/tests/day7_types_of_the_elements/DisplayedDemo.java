@@ -15,7 +15,7 @@ public void test1() throws InterruptedException {
     driver.get( "http://practice.cybertekschool.com/dynamic_loading/1" );  //start button unu gosteriyor, tiklaninca username inputbox ve password inputbox beliriyor
     WebElement usernameInput=driver.findElement( By.id("username") );
 
-    System.out.println( "usernameInput.isDisplayed() = " + usernameInput.isDisplayed() );   //(start buttonuna tiklamadigimiz icin gozukmuyor)
+    System.out.println( "usernameInput.isDisplayed() = " + usernameInput.isDisplayed() ); //false   //(start buttonuna tiklamadigimiz icin gozukmuyor - false)
     // task
     // 1-verify username inputbox is not displayed on the screen
     // 2-click start button
@@ -26,7 +26,7 @@ public void test1() throws InterruptedException {
 
     Assert.assertFalse( usernameInput.isDisplayed(),"verify inputbox is not displayed" );
 
-    //2-click start button
+    //2-click start button (bu button a manuel olarak tiklayin yaklasik 5 sn sonra username inputbox i  ve passwort inputbox i beliriyor
     driver.findElement (By.cssSelector( "#start>button" )).click();
     Thread.sleep( 6000 );  //START BUTTONINA TIKLA VE SAY YAKLASIK KAC SANIYE ICINDE ACILIYOR , BUNU KOYMAYINCA HATA VERIYOR
 
