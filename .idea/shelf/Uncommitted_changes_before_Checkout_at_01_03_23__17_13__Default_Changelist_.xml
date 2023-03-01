@@ -1,0 +1,149 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]" date="1677687185588" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 01.03.23, 17:13 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day10_actions_js/accept and close  --inspectable .png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/accept and close  --inspectable .png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day7_types_of_the_elements/AttributeTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day7_types_of_the_elements/AttributeTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/AttributeTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/Utilities/BrowserUtils.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/Utilities/BrowserUtils.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/BrowserUtils.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/Utilities/ConfigurationReader.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/Utilities/ConfigurationReader.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/ConfigurationReader.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day10_file_upload/FilePathExample.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day10_file_upload/FilePathExample.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/FilePathExample.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day8_types_of_elements_2/selectbyvalue.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/selectbyvalue.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day9_popups_tabs_frames/iframeTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day9_popups_tabs_frames/iframeTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/iframeTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/test/java/com/cybertek/tests/day6_css_locator/TESTNG TUTORIAL.pdf" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day6_css_locator/TESTNG TUTORIAL.pdf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/TESTNG TUTORIAL.pdf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day3_webelement_intro/verifyURLchanged.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day3_webelement_intro/verifyURLchanged.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/verifyURLchanged.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day9_waits/after clciking start button , we see username inputbox in 5 second.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/after clciking start button , we see username inputbox in 5 second.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day8_types_of_elements_2/SelectDropdownTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day8_types_of_elements_2/SelectDropdownTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/SelectDropdownTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day9_waits/click start and wait--&gt;it is loading in 5 second.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/click start and wait--&gt;it is loading in 5 second.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day3_webelement_intro/verifyConfirmationMessage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day3_webelement_intro/verifyConfirmationMessage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/verifyConfirmationMessage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day4_ID_locater/classNameTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day4_ID_locater/classNameTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/classNameTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day9_popups_tabs_frames/MultipleWindows.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day9_popups_tabs_frames/MultipleWindows.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/MultipleWindows.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day9_popups_tabs_frames/iframe.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/iframe.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day9_popups_tabs_frames/switching iframe with id or name.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/switching iframe with id or name.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/test/java/com/cybertek/tests/day10_actions_js/cookie.png" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/Utilities/Driver.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/Utilities/Driver.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/Driver.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day10_file_upload/FileUploadTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day10_file_upload/FileUploadTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/FileUploadTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/test/java/com/cybertek/tests/day8_types_of_elements_2/Screenshot 2022-10-01 at 16.14.12.png" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day8_types_of_elements_2/SELECT_TAG ve  --&gt; option , value  degerleri .png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/SELECT_TAG ve  --&gt; option , value  degerleri .png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day2_webdriver_basics/CallWebDriverFactory.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day2_webdriver_basics/CallWebDriverFactory.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/CallWebDriverFactory.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="src/test/java/com/cybertek/tests/day16_ddf/Map hierachy.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/Map hierachy.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day12_properties_driver_tests/Singleton.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day12_properties_driver_tests/Singleton.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/Singleton.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/Utilities/BrowserUtils$1.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/Utilities/BrowserUtils$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/BrowserUtils$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/pages/ContactsPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/pages/ContactsPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/ContactsPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day1_intro/OpenBrowser.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day1_intro/OpenBrowser.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/OpenBrowser.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day8_types_of_elements_2/CLASS_NOTES.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="selenium locaters to find easily PDF DOCUMENTS/#.pdf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_03_23,_17_13_[Default_Changelist]/#.pdf" />
+  </binary>
+</changelist>
