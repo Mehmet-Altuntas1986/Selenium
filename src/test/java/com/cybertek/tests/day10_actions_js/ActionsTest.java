@@ -66,12 +66,12 @@ public class ActionsTest {
             acceptCookies.get(0).click();          //bazen accept cookies tiklanmadan bir sonraki stepe gecilemez
         }
 
-        WebElement source = driver.findElement(By.id("draggable"));
-        WebElement target = driver.findElement(By.id("droptarget"));
+        WebElement draggable = driver.findElement(By.id("draggable"));
+        WebElement dropTarget = driver.findElement(By.id("droptarget"));
 
 
         Thread.sleep(2000);
-        actions.dragAndDrop(source,target).perform();
+        actions.dragAndDrop(draggable,dropTarget).perform();
     }
 
     @Test

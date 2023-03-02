@@ -29,7 +29,7 @@ public class PopupsAndAlerts {  //bazi pop up lar clickable and inspectable faka
         driver.get("https://www.primefaces.org/showcase/ui/overlay/confirmDialog.xhtml");
 
         //click the Destroy the World button -->bu web sitesinde bu button artik belirmiyor, eskiden beliriyordu (kendim yapmaliyim)
-        driver.findElement(By.xpath("//span[.='Confirm ']")).click();  //confirm button inina click et         . --> nokta = this
+        driver.findElement(By.xpath("//span[.='Confirm']")).click();  //confirm button inina click et         . --> nokta = this (text manasinda)   or    //span[contains (text(),'Confirm') ] [1]
 
         //Click NO button
         driver.findElement(By.xpath("//button[.='No']")).click();
@@ -44,9 +44,10 @@ public class PopupsAndAlerts {  //bazi pop up lar clickable and inspectable faka
         driver.findElement(By.xpath("//button[1]")).click(); //bu java degil index 1 den baslar
 
         //switch to JS alert pop up
-        Alert alert = driver.switchTo().alert();   //Alert seleniuma ait   //object olusturuldu
+        Alert alert = driver.switchTo().alert();   //Alert seleniuma ait bir interface  //object olusturuldu
         Thread.sleep(2000);
-        alert.accept();
+        System.out.println( "alert.getText() = " + alert.getText() );   //alert.getText() = I am a JS Alert
+        alert.accept();  //birde dismiss() var tam tersi
 
         //click for JS confirm
         driver.findElement(By.xpath("//button[2]")).click();
@@ -62,10 +63,10 @@ public class PopupsAndAlerts {  //bazi pop up lar clickable and inspectable faka
     }
 
 }
-//in interview if they ask how to handle pop ups --> answer--> I use Alert  class
+//in interview if they ask how to handle pop ups --> answer--> I use Alert  Interface
 
 //java scriptten gelen popup ve alert leri inspect yapamiyoruz , buyuzden locater kullanamiyoruz , buyuzden biz Alert
-// diye bir class imiz var, switch yapip onu kullaniyoruz
+// diye bir Interface imiz var, switch yapip onu kullaniyoruz
 
 /*    • Following syntax is used for locating elements containing exact text within an element
      //TagName[text()=‘exact text’]      OR       //TagName[.=‘exact text’]

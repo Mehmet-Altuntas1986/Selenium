@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_02_03_23,_17_19_[Default_Changelist]1" date="1677773994252" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_17_19_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 02.03.23, 17:19 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day10_actions_js/ActionsTest.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day10_actions_js/ActionsTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_17_19_[Default_Changelist]1/ActionsTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/cybertek/tests/day9_waits/ImplicitWaitExample.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/cybertek/tests/day9_waits/ImplicitWaitExample.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_17_19_[Default_Changelist]1/ImplicitWaitExample.class" />
+  </binary>
+</changelist>
