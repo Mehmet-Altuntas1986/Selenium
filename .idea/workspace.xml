@@ -183,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ExplicitWaitExample.test2" />
         <item itemvalue="TestNG.PopupsAndAlerts.test2" />
         <item itemvalue="TestNG.PopupsAndAlerts.test1" />
-        <item itemvalue="TestNG.iframeTest.test1" />
         <item itemvalue="TestNG.iframeTest.test3" />
+        <item itemvalue="TestNG.iframeTest.test1" />
+        <item itemvalue="TestNG.ExplicitWaitExample.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +236,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="branch1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
