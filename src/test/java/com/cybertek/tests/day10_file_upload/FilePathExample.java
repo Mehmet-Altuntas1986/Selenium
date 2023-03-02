@@ -3,27 +3,25 @@ package com.cybertek.tests.day10_file_upload;
 import org.testng.annotations.Test;
 
 public class FilePathExample {
- //bunu githup dan bir arkadasim alip bilgisayarinda kullanabilir ,hata vermez
+    //bunu githup dan bir arkadasim alip bilgisayarinda kullanabilir ,hata vermez
     @Test
     public void test1() {
-        // /Users/jamaldemir/IdeaProjects/fromgit/EU3TestNGSelenium/src/test/resources/textfile.txt
-
-        // /Users/jamaldemir/IdeaProjects/fromgit/EU3TestNGSelenium src/test/resources/textfile.txt;      ==> yukardakinden bir slash eksik
-        //System.out.println(System.getProperty("user.dir"));
+        //We can make use of the System class to detect the OS
         System.out.println( System.getProperty( "os.name" ) );
 
-        //Write project file path
+        //Write project file path     ---->Eu3TestNgSelenium projesinin path i
         String projectPath = System.getProperty( "user.dir" );  //gives you your project location folder --> cunku butun bilgisayarlarda calismasini istiyorum
         System.out.println( "projectPath = " + projectPath );
 
         //Write the file path in your project
         String filePath = "src/test/resources/textfile.txt"; //click (under resources) textfile.txt --> copypath--> choose repository or content root ==>bu bir static path,
+        System.out.println( "filePath = " + filePath );
         // bende calsir ama baskasinin bilgisayarinda is gormez
 
 
         //project path + any file path in project   ---> Dynamic --> can be used in all computers
         String fullPath = projectPath + "/" + filePath;
-        System.out.println( fullPath );
+        System.out.println( "fullPath = " + fullPath );
     }
 
 }
