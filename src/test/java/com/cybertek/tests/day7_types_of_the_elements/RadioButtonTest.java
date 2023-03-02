@@ -19,9 +19,9 @@ public class RadioButtonTest {
         WebElement redRadioBtn=driver.findElement(By.id("red"));
 
 
-       //how ot check radio button is selected
-        System.out.println( "blueRadioBtn.isDisplayed() = " + blueRadioBtn.isDisplayed() );
-        System.out.println( "redRadioBtn.isSelected() = " + redRadioBtn.isSelected() );
+       //how to check radio button is selected
+        System.out.println( "blueRadioBtn.isDisplayed() = " + blueRadioBtn.isDisplayed() ); //true
+        System.out.println( "redRadioBtn.isSelected() = " + redRadioBtn.isSelected() );     //false
                                                        //  redRadioBtn.isSelected().soutv -->click
 
         // verify blue is selected
@@ -31,7 +31,8 @@ public class RadioButtonTest {
         Assert.assertTrue(blueRadioBtn.isSelected(),"Verify that blue is selected"  );//isSelected returns true or false
         Assert.assertFalse(redRadioBtn.isSelected(),"verify that red is not selected" );
 
-       // how to click redradio button?  //redradio button ununa click etmeseydim asagidakiler hata verirdi
+
+        // how to click redradio button?  //redradio button ununa click etmeseydim asagidakiler hata verirdi
         redRadioBtn.click();
 
        //if I click on the redButton in the website  , what happens?
@@ -49,3 +50,5 @@ public class RadioButtonTest {
 
 
 }
+
+//   redRadioBtn.isSelected().soutv -->click    kisayol ile print statement olusturma

@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements/DisplayedDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements/DisplayedDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Vytracktestdata.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/textfile.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +20,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -52,63 +48,42 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_popups_tabs_frames" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_actions_js" />
-      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_waits" />
-      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_popups_tabs_frames" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DisplayedDemo.test1">
-    <configuration name="AmazonTest_homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day5_xpath_usage.AmazonTest_homework" />
+  <component name="RunManager" selected="TestNG.ExplicitWaitExample.test2">
+    <configuration name="ExplicitWaitExample.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day5_xpath_usage.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day9_waits.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_waits" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_waits.ExplicitWaitExample" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day5_xpath_usage.FirstClass" />
+    <configuration name="PopupsAndAlerts.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day5_xpath_usage.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nameLocaterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day4_ID_locater.nameLocaterTest" />
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day4_ID_locater.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AttributeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day7_types_of_the_elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day7_types_of_the_elements" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day7_types_of_the_elements.AttributeTest" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.PopupsAndAlerts" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -117,17 +92,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayedDemo.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PopupsAndAlerts.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day7_types_of_the_elements.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day7_types_of_the_elements" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day7_types_of_the_elements.DisplayedDemo" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.PopupsAndAlerts" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,13 +128,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="iframeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.iframeTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iframeTest.test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.iframeTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DisplayedDemo.test1" />
-        <item itemvalue="TestNG.AttributeTest.test1" />
-        <item itemvalue="Application.nameLocaterTest" />
-        <item itemvalue="Application.FirstClass" />
-        <item itemvalue="Application.AmazonTest_homework" />
+        <item itemvalue="TestNG.PopupsAndAlerts.test2" />
+        <item itemvalue="TestNG.PopupsAndAlerts.test1" />
+        <item itemvalue="TestNG.iframeTest.test3" />
+        <item itemvalue="TestNG.iframeTest.test1" />
+        <item itemvalue="TestNG.ExplicitWaitExample.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +183,35 @@
       <option name="presentableId" value="Default" />
       <updated>1629449527785</updated>
     </task>
+    <task id="LOCAL-00001" summary=" day 7 de notlar aldim">
+      <created>1677692200403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677692200403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Select tagi varsa--Select class i kullanilabilir">
+      <created>1677704707882</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677704707882</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Select tagi varsa--Select class i kullanilabilir">
+      <created>1677705041496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677705041496</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object">
+      <created>1677705129940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677705129940</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,11 +219,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="branch1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="displayed demoda notlar aldim" />
+    <MESSAGE value=" day 7 de notlar aldim" />
+    <MESSAGE value="Select tagi varsa--Select class i kullanilabilir" />
+    <MESSAGE value="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

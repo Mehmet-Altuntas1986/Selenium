@@ -18,8 +18,9 @@ public class ImplicitWaitExample {
     @BeforeMethod
     public void setUp(){
         driver = WebDriverFactory.getDriver("chrome");
+                                                 //PARAMETRE KISMINA ONCE 30 YAZ, SONRA VIRGUL Second yaz , sonra duzenle
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS); //qa enviroment ta eger islem 20 sn veya 30 sn den daha fazla suruyorsa cok yavas demektir
-                                                                              //asagidaki herbir method dan once max 30 sn veriyor, bu cok buyuk bir rakam
+                                                                              //asagidaki herbir test method undan once max 30 sn veriyor, bu cok buyuk bir rakam
         //asagida herbir findElement icin max 30 sn bekleyebilir, asagidaki methodlar run olurken tabikide 30 sn icinde run olmuyorlar , ama 30 sn icnde elementi bulmalilar
         //eger findElement 30 sn icinde bulamazsa , it will throw  no such element exception
         //thread i kullandigimizda tahmini bir sn koyuyoruz, ama bunda zaman ne fazla nede az oluyor

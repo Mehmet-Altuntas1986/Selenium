@@ -30,12 +30,12 @@ public class iframeTest {  //iframe divides the webpage ,yani birden fazla html 
         driver.get("http://practice.cybertekschool.com/iframe");
 
         //How to switch frames
-        //1.Switch using by name or ID attribute of iframe        =>o frame icinde bulunan bir elementin -->name or id String ini parametre olarak sadece kabul ediyor birde index numaaralarini int olarak
+        //1.Switch using by name or ID attribute of iframe        => o frame icinde bulunan bir elementin --> name or id String ini parametre olarak sadece kabul ediyor birde index numaaralarini int olarak
 
-  //gitmek istedigin frame icinde bir elementin id veya name ini sec
-        driver.switchTo().frame("");  //diyelimki burda small html e gittik  //burda id kullanildi switch icin   --mce_0_ifr
+  // Write frame id or name to switch
+        driver.switchTo().frame( "mce_0_ifr" );  //bu frame in Id :mce_0_ifr  ini yazinca ,frame e switch olur ve mikesmith ismi sendkeys ile gonderilebilir.Icini bos birakinca selenium ile locate edip ,send keys ile yazi gonderemedik
 
-        //clear before sendkeys
+        //find "your content goes here " locater  -->then use clear() method to clean content if there is
         driver.findElement(By.cssSelector("#tinymce")).clear();  //manauel olarak type yaptigimiz kisimda yazilar varsa , clear method siler onlari
                                                                  //your content goes here yazisi silindi
         Thread.sleep(1000);
@@ -55,11 +55,12 @@ public class iframeTest {  //iframe divides the webpage ,yani birden fazla html 
         driver.findElement(By.cssSelector("#tinymce")).sendKeys("MikeSmith WITH INDEX");
 
         //second way to switch parent -->ana html
-        driver.switchTo().frame( 0 );
+        driver.switchTo().parentFrame();
+
 
         //3.USING WEBELEMENT
         //locating iframe with any valid locator
-        WebElement iframeElement = driver.findElement(By.tagName("iframe"));
+        WebElement iframeElement = driver.findElement(By.xpath("//iframe"));
 
         driver.switchTo().frame(iframeElement);
 
@@ -115,14 +116,14 @@ public class iframeTest {  //iframe divides the webpage ,yani birden fazla html 
 
           HTML(Default Content)
               0 frame-top(parent frame)
-     index        0   left
-                  1   middle
-                  2   right
+     index          0   left
+                    1   middle
+                    2   right
               1 frame-bottom
 
 
            frame top dan frame bottom a gecilemez ,ANA HTML DEN GECIS SAGLANABILIR
-           KARDESLER (SIBLINGS) ARASI GECIS YOK --> FRAME TOP TAN FRAME BOTTOM E GECILMEZ,,  HTML DEN FRAME BOTTOM YADA FRAME TOP A GECEBILIRSIN
+           KARDESLER (SIBLINGS) ARASI GECIS YOK --> FRAME TOP TAN FRAME BOTTOM E GECILMEZ,  HTML DEN FRAME BOTTOM YADA FRAME TOP A GECEBILIRSIN
 */
 
     }

@@ -39,13 +39,13 @@ public class NoSelectDropdown {
         //click the dropdown to see available options
         dropdownElement.click();
         //get the options with findElements method and finding common locator between them
-        List<WebElement> dropdownOptions = driver.findElements(By.className("dropdown-item"));
-
+        List<WebElement> dropdownOptions = driver.findElements(By.className("dropdown-item"));    //or   xpath ile   //div [@class='dropdown-menu show']/child::*
         //print size of options
         System.out.println("dropdownOptions.size() = " + dropdownOptions.size());
         Assert.assertEquals(dropdownOptions.size(),5,"verify size of options");
 
         //print them one by one
+
         for (WebElement option : dropdownOptions) {
             System.out.println(option.getText());
         }
