@@ -27,7 +27,7 @@ public class ActionsTest {
         Thread.sleep(2000);
         driver.quit();
     }
-  //bazi durumlarda maus ile resmin uzerine gelince yazilar beliriyor resmin altinda, bu yazilari inspect ediyoruz
+  // bazi durumlarda maus ile resmin uzerine gelince yazilar beliriyor resmin altinda, bu yazilari inspect ediyoruz
     @Test
     public void hoverTest() throws InterruptedException {
         driver.get("http://practice.cybertekschool.com/hovers");
@@ -49,7 +49,7 @@ public class ActionsTest {
 
     @Test
     public void dragAndDrop() throws InterruptedException {
-        driver.get("https://demos.telerik.com/kendo-ui/dragdrop/index"); //driver ile acinca bir cookies cikiyor ekranda
+        driver.get("https://demos.telerik.com/kendo-ui/dragdrop/index");  //driver ile acinca bir cookies cikiyor ekranda
         driver.manage().window().maximize();
 
 
@@ -90,12 +90,12 @@ public class ActionsTest {
             acceptCookies.get(0).click();
         }
 
-        WebElement source = driver.findElement(By.id("draggable"));  //kucuk top un locater i
-        WebElement target = driver.findElement(By.id("droptarget"));  //buyuk top resmi
+        WebElement dragable = driver.findElement(By.id("draggable"));  //kucuk top un locater i
+        WebElement dropTarget = driver.findElement(By.id("droptarget"));  //buyuk top resmi
 
         Thread.sleep(2000);
         //mouse u source a hareket ettir , sonra CLICK AND HOLD IT , SONRA target a surukle AND release it
-        actions.moveToElement(source).clickAndHold().moveToElement(target).pause(2000).release().perform(); //moveto element
+        actions.moveToElement(dragable).clickAndHold().moveToElement(dropTarget).pause(2000).release().perform(); //moveto element
 
 
     }
