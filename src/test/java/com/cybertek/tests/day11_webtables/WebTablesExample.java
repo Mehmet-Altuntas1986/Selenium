@@ -38,8 +38,8 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
 //    }
 
     @Test
-    public void printTable() {
-        WebElement table = driver.findElement( By.xpath( "//table[@id='table1']" ) );  //WebElement is an intereface in java.util package
+    public void printTable() {  //Burda table icerigini bir elementmis gibi atti -->Buda mumkun , bu yuzden List <WebElement>  kullanamaz --> kullanmasi icin findElelements
+        WebElement table = driver.findElement( By.xpath( "//table[@id='table1']" ) );  //WebElement is an intereface  in Selenium
 
         System.out.println( table.getText() );  //table 1 de everything in the string appears in the console ( last name ........edit delete e kadarki kisma bak
 
