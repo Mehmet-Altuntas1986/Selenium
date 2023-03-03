@@ -52,7 +52,7 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
         List<WebElement> headers = driver.findElements( By.xpath( "//table[@id='table1']//th" ) );   //xpath de tek slash ile html dom da  1 ileri gidebilirsin ama // cift slash ile istedigin kadar ilerideki bir tag a atlayabilirsin
         System.out.println( "headers.size() = " + headers.size() );
 
-        for (WebElement header : headers) {
+        for (WebElement header : headers) {    //iter +enter
 
             System.out.println( header.getText() );  //header larin isimlerini console da yazdirir
         }
