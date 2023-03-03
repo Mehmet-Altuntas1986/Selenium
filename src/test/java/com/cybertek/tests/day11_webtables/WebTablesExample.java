@@ -86,10 +86,11 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
         List<WebElement> numRows = driver.findElements( By.xpath( "//table[@id='table1']/tbody/tr" ) );
         //2.iterate one by one
         for (int i = 1; i <= numRows.size(); i++) {
-            WebElement row = driver.findElement( By.xpath( "//table[@id='table1']/tbody/tr[" + i + "]" ) );
+            WebElement row = driver.findElement( By.xpath( "     //table[@id='table1']/tbody/tr[" + i + "]    " ) );
             System.out.println( i + "-" + row.getText() );
         }
 
+       //herbir row icerigini bir elelment gibi olacak sekilde locate etti  -- 4 row 4 elelment olcak sekilde
         //***loop shortcuts iter and itar +entera tikla
 
     }
