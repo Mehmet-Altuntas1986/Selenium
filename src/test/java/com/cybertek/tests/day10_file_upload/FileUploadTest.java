@@ -63,7 +63,9 @@ public class FileUploadTest {
         String filePath = "src/test/resources/textfile.txt";    //textfile.txt proje dosyasinin icinde
 
         String fullPath = projectPath+"/"+filePath;          //bu path den maksat dosyanin  bilgisayarimda nerede bulundugu ile ilgili
-        chooseFile.sendKeys(fullPath);
+
+        chooseFile.sendKeys(fullPath);      //choose file button elelmntine -->full path of file   gonderilirse  -->file secilmis olur  -->sonra upload buttonuna tiklariz
+
         //clicking upload button
         driver.findElement(By.id("file-submit")).click();
 
