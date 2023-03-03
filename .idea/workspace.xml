@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object" />
+    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="file path example -day 10 modified">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_21_21_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_21_21_[Default_Changelist]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23__21_21__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23__21_21__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/FileUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/FileUploadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/Screenshot 2022-10-03 at 14.58.07.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/file.txt file uploaded.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,35 +63,17 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_actions_js" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ExplicitWaitExample.test2">
-    <configuration name="ExplicitWaitExample.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FileUploadTest.test1">
+    <configuration name="FilePathExample.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day9_waits.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day10_file_upload.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_waits" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_waits.ExplicitWaitExample" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PopupsAndAlerts.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.PopupsAndAlerts" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_file_upload" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_file_upload.FilePathExample" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -92,17 +82,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PopupsAndAlerts.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FileUploadTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day10_file_upload.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.PopupsAndAlerts" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_file_upload" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_file_upload.FileUploadTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaScriptExecuterDemo.ScrollDownAndUp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day10_actions_js.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_actions_js" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_actions_js.JavaScriptExecuterDemo" />
+      <option name="METHOD_NAME" value="ScrollDownAndUp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaScriptExecuterDemo.clickWithJS" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day10_actions_js.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_actions_js" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_actions_js.JavaScriptExecuterDemo" />
+      <option name="METHOD_NAME" value="clickWithJS" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaScriptExecuterDemo.typeWithJS" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day10_actions_js.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_actions_js" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_actions_js.JavaScriptExecuterDemo" />
+      <option name="METHOD_NAME" value="typeWithJS" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -128,49 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iframeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.iframeTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="iframeTest.test3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day9_popups_tabs_frames.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day9_popups_tabs_frames" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day9_popups_tabs_frames.iframeTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PopupsAndAlerts.test2" />
-        <item itemvalue="TestNG.PopupsAndAlerts.test1" />
-        <item itemvalue="TestNG.iframeTest.test3" />
-        <item itemvalue="TestNG.iframeTest.test1" />
-        <item itemvalue="TestNG.ExplicitWaitExample.test2" />
+        <item itemvalue="TestNG.FileUploadTest.test1" />
+        <item itemvalue="TestNG.FilePathExample.test1" />
+        <item itemvalue="TestNG.JavaScriptExecuterDemo.ScrollDownAndUp" />
+        <item itemvalue="TestNG.JavaScriptExecuterDemo.typeWithJS" />
+        <item itemvalue="TestNG.JavaScriptExecuterDemo.clickWithJS" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +219,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677705129940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="eklendi">
+      <created>1677777854632</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677777854632</updated>
+    </task>
+    <task id="LOCAL-00006" summary="day 10 -- new additions">
+      <created>1677787291563</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677787291563</updated>
+    </task>
+    <task id="LOCAL-00007" summary="file path example -day 10 modified">
+      <created>1677797006238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677797006238</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +271,10 @@
     <MESSAGE value=" day 7 de notlar aldim" />
     <MESSAGE value="Select tagi varsa--Select class i kullanilabilir" />
     <MESSAGE value="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select tagi varsa--Select class i kullanilabilir --extends java.lang.Object" />
+    <MESSAGE value="eklendi" />
+    <MESSAGE value="day 10 -- new additions" />
+    <MESSAGE value="file path example -day 10 modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="file path example -day 10 modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

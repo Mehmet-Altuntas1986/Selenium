@@ -24,16 +24,15 @@ public class JavaScriptExecuterDemo {
         Thread.sleep(2000);
         // driver.quit();
     }
-
+                                                //javaScriptExecutor.executeScript("arguments[0].click()", webElement);
     @Test
     public void clickWithJS(){   //CLICK WITH JAVA SCRIPT
-        driver.get("http://practice.cybertekschool.com/");
+        driver.get("http://practice.cybertekschool.com");
 
         WebElement dropdownLink = driver.findElement(By.linkText("Dropdown"));
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-
-        jse.executeScript("arguments[0].click();", dropdownLink);//selenium da bazen click calismaz, bu durumda javascript ile click yapariz
-
+        jse.executeScript("   arguments[0].click();   ", dropdownLink);//selenium da bazen click calismaz, bu durumda javascript ile click yapariz
+//note :script den sonra "  "  iki double quote var
     }
        //how to click an element in selenium WebDriver using JavaScript  --> google da yazip bakabiliriz
     @Test
@@ -42,11 +41,14 @@ public class JavaScriptExecuterDemo {
 
         WebElement inputBox = driver.findElement(By.cssSelector("#input-example>input"));   //  #  represents id  and  > isareti ile child tab a gecis yapti
 
-        JavascriptExecutor jse = (JavascriptExecutor) driver;   //burda casting driver to JavascriptExecutor , so that we can use cse
+        JavascriptExecutor jse = (JavascriptExecutor) driver;   //burda casting driver to JavascriptExecutor , so that we can use jse
 
         String text = "Hello Disabled Input";  //locate ettigimiz Box in icindeki yazi
 
-        jse.executeScript("arguments[0].setAttribute('value', '" + text +"')", inputBox);   //inputBox IS Weblement  -->setAttribute(name, value)
+        jse.executeScript("   arguments[0].setAttribute('value', '" + text +"')     ", inputBox);   //inputBox IS Weblement  -->setAttribute(Attribute name, Attribute value)
+
+        //argumets[0]  bizim web elementini temsil ediyor -->inputbox
+
 
     }
     @Test
