@@ -14,7 +14,6 @@ public class ConfigurationReader {  //reponsibility of this class is finding con
 
     static {   //load the file first             // static blocks are automatically called as soon as class is loaded in memory
 
-        System.out.println("sadfsd");
         try {
             // what file to read
             String filePath = "configuration.properties";                            // path of properties file as a string
