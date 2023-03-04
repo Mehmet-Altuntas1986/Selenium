@@ -65,11 +65,11 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
         List<WebElement> headers = driver.findElements( By.xpath( "//table[@id='table1']//th" ) );  //kac tane th oldugunu verir (her bir th bir column daki header lari gosteriyor)
         System.out.println( "headers.size() = " + headers.size() ); //6 columns with headers
 
-        //number of rows
+        //number of rows     5 raw --> 5 element , herbirini icine bir row aliyor
         List<WebElement> allRowsWithHeader = driver.findElements( By.xpath( "//table[@id='table1']//tr" ) );
         System.out.println( allRowsWithHeader.size() );
 
-        //number of rows without header(we prefer this)
+        //number of rows without header(we prefer this)  -- 4 row -->4 element
         List<WebElement> allRowsWithoutHeader = driver.findElements( By.xpath( "//table[@id='table1']/tbody/tr" ) );
         System.out.println( allRowsWithoutHeader.size() );
     }
@@ -115,8 +115,8 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
     @Test
     public void printAllCellsByIndex() {
 
-        int rowNumber = getNumberOfRows();  // getNumberOfRows() methodu olmadigi icin  bu class in icinde bu isimde bir method olusturduk ve icini doldurduk -line en sondakiler
-        int colNumber = getNumberOfColumns(); //bu methoduda bu class in icinde olusturduk
+        int rowNumber = getNumberOfRows();    // getNumberOfRows() methodu olmadigi icin  bu class in icinde bu isimde bir method olusturduk ve icini doldurduk -line en sondakiler
+        int colNumber = getNumberOfColumns(); // bu methoduda bu class in icinde olusturduk
 
         System.out.println( "colNumber = " + colNumber );
         System.out.println( "rowNumber = " + rowNumber );
@@ -134,9 +134,7 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
                 System.out.println( cell.getText() );  //24 cell in icerigi console da print oldu
 
             }
-
         }
-
     }
 
     //in the real life ornegin --<you are looking for the email of the john
@@ -147,7 +145,7 @@ Increasing the implicit wait timeout should be used judiciously as it will have 
 
         String firstName = "Jason";  //ismin column i belli ama hangi raw da olacagi belli degil, her tiklamada degisiyorsa , asagida dynmaic bir yapi olustururuz
         //row lara testingte guvenme ve dynamic bir yol bul
-        String xpath = "//table[@id='table1']//td[.='" + firstName + "']/../td[3]";   //    /.. parent a goturuyor inspect te  //td is column
+        String xpath = "//table[@id='table1']//td[.='" + firstName + "']/../td[3]";   //    /.. parent a goturuyor inspect te  //td is column or  /parent::td[3]
         WebElement email = driver.findElement( By.xpath( xpath ) );
         System.out.println( email.getText() );
 

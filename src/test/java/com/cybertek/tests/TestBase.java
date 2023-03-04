@@ -18,12 +18,12 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase { //Test base i olusturmamizimn sebebi herbir test case de before and after methodu tekrar ve tekrar yazmamak , bu class i olusturdum
-                      //We initiliaze everything in our testBase
+public class TestBase { // Test base i olusturmamizimn sebebi herbir test case de before and after methodu tekrar ve tekrar yazmamak , bu class i olusturdum
+                      // We initiliaze everything in our testBase
 
-    protected WebDriver driver;  //protected i ekleyince 2 class arasinda baglanti kurulabildi , logintest(day12) teki driver hata vermedi
+    protected WebDriver driver;  //protected i ekleyince 2 class arasinda baglanti kurulabildi , logintest(day12) deki driver hata vermedi
     protected Actions actions;  //bu line ve before methodun icinde son line a ekleme yapildi
-    protected WebDriverWait wait;   //explicit
+    protected WebDriverWait wait; //explicit
 
     //this class is used for starting and building reports  --day14 --copy paste +protected yaptim
     protected ExtentReports report;
