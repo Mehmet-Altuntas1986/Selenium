@@ -56,6 +56,7 @@ public class TestBase { // Test base i olusturmamizimn sebebi herbir test case d
         report.setSystemInfo("Environment","QA");
         report.setSystemInfo("Browser", ConfigurationReader.get("browser")); //it gives me dynamicly browser type
         report.setSystemInfo("OS",System.getProperty("os.name"));
+
     }
 
 

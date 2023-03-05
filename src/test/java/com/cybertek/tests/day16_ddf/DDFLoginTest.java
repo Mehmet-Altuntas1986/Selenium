@@ -47,4 +47,4 @@ public class DDFLoginTest extends TestBase {  //EACH TEST CASE OPENING SEPERATE 
 
 // selenium is responsible for automating browser --> Assert kismi comes from testNg we use it to create tests,run tests,generate reports
 
-// exelUtil day 16 da olusturuldu   ,resources file inin icinde Vytrackdata .xlsx fiel i var
+// exelUtil day 16 da olusturuldu ,resources file inin icinde Vytrackdata .xlsx fiel i var

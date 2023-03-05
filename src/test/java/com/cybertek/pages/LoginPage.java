@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , loginpage e gelir parantez iclerinde ilgili locater degistirilir
                           //login page i BasePage e extends yapmadim cunku commen properties yok(ornegin Menu,subtitle ,diger moduller varmi login page de)
 
+  //When we create an object with loginPage , it will call the constructor and initiliate webElements found in the class
    public LoginPage(){  //constructor
        //We use Page Factory pattern to initialize web elements which are defined in Page Objects.
         PageFactory.initElements( Driver.get(),this);  // pageFactory-is a class from selenium , initElements methodunu oradan kullaniyoruz
@@ -18,13 +19,19 @@ public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , lo
     }                                                       // Control B ILE INCELE
 
 
-    //driver.findElement(By.id("prependedInput")); BOYLE YAZMAK YERINE ayni islemi simdi find annotation lari ile yapacagiz
-    @FindAll({                                //@FindBy, @FindBys bunlarida kullanabilirdik
+    //The @FindBys annotation is used in case elements need to match all of the given criteria
+
+    //The @FindAll annotation is used in case elements need to match at least one of the given criteria
+
+    @FindAll({                               //@FindBys ile degistiridigimizde iki locater da sorunsuz calismasi gerekiyor
            @FindBy(id = "prependedInput"),
            @FindBy(name ="_username")
     })
-    public WebElement usernameInput;     //WebLocater's name is usernameInput  burada  //websitesini acinca box larin
-                                        // icinde username ,password ,login gibi seyler var, bu yuzden bu isimleri verdik
+    public WebElement usernameInput;
+
+
+    /*yukarida PageFactory.initleemnts ile herbir class objecti initialize olur demistik , ornegin
+    passwordInput elelementi  initiliaze olunca bu degeri alir -->id = "prependedInput2"  */
 
     @FindBy(id = "prependedInput2")   //selenium annotation
     public WebElement passwordInput;
@@ -68,6 +75,8 @@ public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , lo
 //locater lari koydugumuz class ve ayni zamanda bazi methodlarida buraya koyuyoruz
 //bir websitesinde farkli module lere tiklayinca hala sayfade degismeyen birtakim kisimlar goruruz url degismesine ragmen (login haric)
 //we have common actions and locaters
+
+//    driver.findElement(By.id("prependedInput")); BOYLE YAZMAK YERINE ayni islemleri simdi find annotation lari ile yapildi , yani web elelmentler initilaize (data koyma islemi) edildi
 
 /*
 /*
