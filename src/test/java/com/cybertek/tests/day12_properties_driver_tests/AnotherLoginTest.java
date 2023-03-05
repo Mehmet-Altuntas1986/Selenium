@@ -11,7 +11,7 @@ public class AnotherLoginTest extends TestBase {
     @Test
     public void test1() {
 
-        driver.get( ConfigurationReader.get( "url" ) );
+        driver.get( ConfigurationReader.get( "url" ) );  //Url is key  , with get() method inside ConfigurationReader class  -->we get value of the Key
 
         String username = ConfigurationReader.get( "driver_username" );
         String password = ConfigurationReader.get( "driver_password" );

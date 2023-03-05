@@ -11,6 +11,7 @@ public class LoginPage {  //diyelimki ilerde id degisti name locater i oldu , lo
                           //login page i BasePage e extends yapmadim cunku commen properties yok(ornegin Menu,subtitle ,diger moduller varmi login page de)
 
    public LoginPage(){  //constructor
+       //We use Page Factory pattern to initialize web elements which are defined in Page Objects.
         PageFactory.initElements( Driver.get(),this);  // pageFactory-is a class from selenium , initElements methodunu oradan kullaniyoruz
 
                                                             // Driver.get() methodu returns driver--> initElements bize WebDriver driver=new ChromeDriver() gibi bisey elde etmemizi sagliyor

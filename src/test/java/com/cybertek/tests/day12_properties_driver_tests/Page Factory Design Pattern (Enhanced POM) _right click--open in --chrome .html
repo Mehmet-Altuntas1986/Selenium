@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver -->
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema# schema: http://schema.org/" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(5).txt"></script><script type="text/javascript" async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-CRkDHEuaCUtcBqYBZvFIjCzkd+tsooMQvJidwe1Ze+bM82AM7tU9e1BBuAzFUcOt"></script><script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(6).txt"></script><script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(7).txt" id="google_shimpl"></script><script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/analytics.js"></script><script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/api.js" async="async" defer="defer"></script>
+<link rel="shortcut icon" href="https://www.seleniumeasy.com/sites/all/themes/seasy/favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="description" content="Selenium Page Factory Pattern is like an extension to Page Object Model , but Page Factory is much enhanced model. To start with, we just need to import package ‘org.openqa.selenium.support.PageFactory’ &quot;Factory class can be used to make using Page Objects simpler and easier&quot;. We use Page Factory pattern to initialize web elements which are defined in Page Objects. We should">
+<meta name="keywords" content="selenium tutorial, selenium tutorials, selenium webdriver tutorial, selenium framework, selenium automation, selenium tool, selenium documentation">
+<meta name="author" content="https://plus.google.com/113160911704961579558">
+<meta name="robots" content="follow, index">
+<meta name="news_keywords" content="Page Factory pattern selenium webdriver, PageFactory pattern">
+<meta name="rating" content="general">
+<link rel="image_src" href="http://seleniumeasy.com/sites/default/files/seleniumEasy_0.jpg">
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)">
+<link rel="canonical" href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver">
+<link rel="shortlink" href="https://www.seleniumeasy.com/node/200">
+<meta name="original-source" content="https://www.seleniumeasy.com">
+<meta property="fb:admins" content="seleniumeasy">
+<meta http-equiv="content-language" content="en">
+<meta property="og:site_name" content="Selenium Easy">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver">
+<meta property="og:description" content="Page Factory class can be used to make using Page Objects simpler and easier">
+<meta property="og:title" content="Page Factory Design Pattern (Enhanced POM)">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver">
+<meta name="twitter:description" content="Selenium Page Factory Pattern is like an extension to Page Object Model , but Page Factory is much enhanced model. To start with, we just need to import package">
+<meta name="twitter:title" content="Page Factory Design Pattern (Enhanced POM)">
+<meta property="article:author" content="http://facebook.com/seleniumeasy">
+<meta property="article:tag" content="Page factory pattern">
+<meta property="article:tag" content="pagefactory selenium">
+<meta property="article:tag" content="page factory model">
+<meta property="article:published_time" content="yyyy-mm-dd">
+<meta itemprop="description" content="Page Factory pattern selenium webdriver">
+<meta itemprop="name" content="Page Factory Design Pattern (Enhanced POM)">
+<link rel="publisher" href="http://plus.google.com/113160911704961579558">
+<meta name="dcterms.creator" content="Devendra Raju">
+<meta name="dcterms.title" content="Page Factory Design Pattern (Enhanced POM)">
+<meta name="dcterms.description" content="Page Factory pattern selenium webdriver">
+<meta name="dcterms.subject" content="selenium tutorials">
+<meta name="dcterms.type" content="Text">
+<meta name="dcterms.format" content="text/html">
+<meta name="dcterms.identifier" content="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver">
+<meta name="dcterms.language" content="en">
+  <title>Page Factory Design Pattern (Enhanced POM) | Selenium Easy</title>
+  <style>
+@import url("https://www.seleniumeasy.com/modules/system/system.base.css?rqxrrc");
+</style>
+<style>
+@import url("https://www.seleniumeasy.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?rqxrrc");
+</style>
+<style>
+@import url("https://www.seleniumeasy.com/modules/field/theme/field.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/modules/node/node.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/modules/views/css/views.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/modules/back_to_top/css/back_to_top.css?rqxrrc");
+</style>
+<style>
+@import url("https://www.seleniumeasy.com/sites/all/modules/ctools/css/ctools.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/libraries/highlightjs/styles/default.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/modules/flippy/flippy.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/libraries/fontawesome/css/font-awesome.css?rqxrrc");
+</style>
+<link type="text/css" rel="stylesheet" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/bootstrap.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/drupal-bootstrap.css" media="all">
+<style>
+@import url("https://www.seleniumeasy.com/sites/all/themes/seasy/css/style.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/themes/seasy/css/player.css?rqxrrc");
+</style>
+<style>
+@import url("https://www.seleniumeasy.com/sites/all/modules/highlightjs/highlight_js.css?rqxrrc");
+@import url("https://www.seleniumeasy.com/sites/all/libraries/highlightjs/styles/foundation.css?rqxrrc");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    
+  <![endif]-->
+    <script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/jquery-1.10.2.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/jquery-extend-3.4.0.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/jquery-html-prefilter-3.5.0-backport.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/jquery.once.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/drupal.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/form.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/bootstrap.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/back_to_top.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/highlight.pack.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/highlight_js.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/captcha.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/googleanalytics.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-46729791-2", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/textarea.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/filter.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/sticky.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/player.js"></script>
+<script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/filter(1).js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"easy","theme_token":"BLFDstwhS-KaLSgmiTfSyxAbICoBXg3sboMc4Fy71rg","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/code.jquery.com\/jquery-1.10.2.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"misc\/form.js":1,"https:\/\/cdn.jsdelivr.net\/npm\/bootstrap@3.3.5\/dist\/js\/bootstrap.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/libraries\/highlightjs\/highlight.pack.js":1,"sites\/all\/modules\/highlightjs\/highlight_js.js":1,"sites\/all\/modules\/captcha\/captcha.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"misc\/textarea.js":1,"modules\/filter\/filter.js":1,"sites\/all\/themes\/seasy\/js\/sticky.js":1,"sites\/all\/themes\/seasy\/js\/player.js":1,"sites\/all\/themes\/bootstrap\/js\/modules\/filter\/filter.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/highlightjs\/styles\/default.css":1,"sites\/all\/modules\/flippy\/flippy.css":1,"sites\/all\/libraries\/fontawesome\/css\/font-awesome.css":1,"https:\/\/cdn.jsdelivr.net\/npm\/bootstrap@3.3.5\/dist\/css\/bootstrap.css":1,"https:\/\/cdn.jsdelivr.net\/npm\/@unicorn-fail\/drupal-bootstrap-styles@0.0.2\/dist\/3.3.1\/7.x-3.x\/drupal-bootstrap.css":1,"sites\/all\/themes\/seasy\/css\/style.css":1,"sites\/all\/themes\/seasy\/css\/player.css":1,"sites\/all\/modules\/highlightjs\/highlight_js.css":1,"sites\/all\/libraries\/highlightjs\/styles\/foundation.css":1}},"back_to_top":{"back_to_top_button_trigger":"100","back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/selenium-tutorials\/page-factory-pattern-in-selenium-webdriver":true,"\/comment\/reply\/200":true},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
+<meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(8).txt" as="script"><script type="text/javascript" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(8).txt"></script><link rel="preload" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(9).txt" as="script"><script type="text/javascript" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(9).txt"></script><link rel="preload" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(8).txt" as="script"><script type="text/javascript" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(8).txt"></script><link rel="preload" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(9).txt" as="script"><script type="text/javascript" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(9).txt"></script><link rel="preload" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(8).txt" as="script"><script type="text/javascript" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(8).txt"></script><link rel="preload" href="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(9).txt" as="script"><script type="text/javascript" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(9).txt"></script></head>
+<body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-200 node-type-article jquery-once-1-processed" aria-hidden="false" style="">
+  <div id="skip-link">
+    <a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+<div id="header" class="container-fluid">
+<div id="header_bar" class="row header-bar">
+	<div class="header-bar-content">
+	  <div class="region region-header-bar">
+    <section id="block-block-57" class="block block-block clearfix">
+
+      
+  <div class="content">
+<div class="header-right"><marquee direction="right">demo.seleniumeasy.com</marquee></div>
+</div>
+
+</section>
+  </div>
+	</div>  
+	</div>
+
+<div class="row topper">
+	<div class="col-sm-5 header-section">
+	   <div id="logo" class="site-logo">
+		  		  <a class="logo navbar-btn" href="https://www.seleniumeasy.com/" title="Home">
+		  <img src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/logo.png" alt="Home " title="Selenium Easy">
+		  </a>
+		  	   </div>
+	   <div id="name-and-slogan">
+		  <div id="site-name" class="site-name">
+			 			 <a href="https://www.seleniumeasy.com/" title="Home"><h1>Selenium Easy</h1></a>
+			 		  </div>
+		  <div id="site-slogan" class="site-slogan">
+			 			 <h2 class="slogan">Free selenium tutorials for beginners and experts</h2>
+			 		  </div>
+	   </div>
+	</div>
+
+		<div class="col-sm-7 hidden-xs mtstyle">
+			 			  <div class="head-right">
+				  <div class="region region-head-right">
+    <section id="block-block-71" class="block block-block clearfix">
+
+      
+  <script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(10).txt" crossorigin="anonymous" data-checked-head="true"></script><!-- headTop --><p><ins class="adsbygoogle" style="display:block;height:120px" data-ad-format="fluid" data-ad-layout="image-top" data-ad-client="ca-pub-8248225602828359" data-ad-slot="1525256859" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 120px; width: 772px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:772px;height:120px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="772" height="120" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/ads.html" data-google-container-id="a!2" data-google-query-id="CIXKmqyuxP0CFcUJogMdcI4H_Q" data-load-complete="true"></iframe></div></ins></p>
+<script>
+<!--//--><![CDATA[// ><!--
+(adsbygoogle = window.adsbygoogle || []).push({});
+//--><!]]>
+</script>
+</section>
+  </div>
+			  </div>  
+					</div>
+	</div>
+</div>
+
+<header id="navbar" role="banner" class="navbar container-fluid navbar-inverse">
+  <div class="container-fluid">
+ 
+    <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+              <div class="region region-navigation">
+    <section id="block-search-form" class="block block-search clearfix">
+
+      
+  <form class="form-search content-search" action="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h3 class="element-invisible">Search for Selenium Tutorials</h3>
+    <div class="input-group"><input title="Enter the terms you wish to search for." placeholder="Search" class="form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+</button></span></div><div class="form-actions form-wrapper form-group" id="edit-actions--2"><button class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit--2" name="op" value="Search">Search</button>
+</div><input type="hidden" name="form_build_id" value="form-FCJcD8VAnyZ9H2zK0-Pwcd6JjIqxnBiXBu0SeCesHo8">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>
+</section>
+  </div>
+      	  
+    </div>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf"><a href="https://www.seleniumeasy.com/" title="">Home</a></li>
+<li class="expanded dropdown"><a href="https://www.seleniumeasy.com/" title="" class="dropdown-toggle" data-toggle="dropdown">Selenium <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="https://www.seleniumeasy.com/selenium-tutorials" title="">Selenium with Java</a></li>
+<li class="last leaf"><a href="https://www.seleniumeasy.com/python" title="">Selenium with Python</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/testng-tutorials" title="">TestNG</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/maven-tutorials" title="">Maven</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/jenkins-tutorials" title="">Jenkins</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/protractor-angularjs-tutorials" title="">Protractor</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/appium-tutorials" title="">Appium</a></li>
+<li class="leaf"><a href="http://seleniumeasy.com/apachepoi-tutorials" title="">Apache Poi</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/katalon-studio" title="">Katalon</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/log4j-tutorials" title="">Log4j</a></li>
+<li class="last expanded dropdown"><a href="https://www.seleniumeasy.com/" title="" class="dropdown-toggle" data-toggle="dropdown">More.. <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="https://www.seleniumeasy.com/jxl-tutorials" title="">JXL</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/jmeter-tutorials" title="">JMeter Tutorials</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/ant-tutorials" title="">ANT</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/junit-tutorials" title="">JUnit</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/java-tutorials" title="">Java Tutorials for Selenium</a></li>
+<li class="leaf"><a href="https://www.seleniumeasy.com/manual-testing" title="">Manual Testing</a></li>
+<li class="last leaf"><a href="http://seleniumeasy.com/fluentautomation-tutorials" title="">FluentAutomation</a></li>
+</ul></li>
+</ul>                    
+        </nav>
+      </div>
+      </div>
+</header>
+
+<div class="main-container container-fluid" style="height: auto !important;">
+  <div class="row" style="height: auto !important;">
+          <aside class="col-sm-1 hidden-xs hidden-sm" role="complementary">
+          <div class="region region-sidebar-first">
+    <section id="block-block-62" class="block block-block clearfix">
+
+      
+  <div id="side-ad" class="sidead">
+<script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(11).txt"></script><!-- easy5 --><p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9942551602531349" data-ad-slot="4598684430" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"></ins></p>
+<script>
+<!--//--><![CDATA[// ><!--
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+//--><!]]>
+</script></div>
+
+</section>
+<section id="block-block-69" class="block block-block clearfix">
+
+      
+  <div>
+</div>
+
+</section>
+  </div>
+      </aside>  <!-- /#sidebar-first -->
+    
+    <section class="col-sm-6">
+	 	 <a id="main-content"></a>
+            	  <div class="section-title">
+        <h1>Page Factory Design Pattern (Enhanced POM)</h1>
+		</div>
+                          <div class="highlighted">  <div class="region region-highlighted">
+    <section id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb clearfix">
+
+      
+    <div itemscope="" class="easy-breadcrumb" itemtype="https://schema.org/BreadcrumbList">
+          <span itemprop="title"><a href="https://www.seleniumeasy.com/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Home</a></span>               <span class="easy-breadcrumb_segment-separator">&gt;&gt;</span>
+                <span itemprop="title"><a href="https://www.seleniumeasy.com/selenium-tutorials" class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Selenium Tutorials</a></span>               <span class="easy-breadcrumb_segment-separator">&gt;&gt;</span>
+                <span itemprop="title"><a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Page Factory Design Pattern (Enhanced POM)</a></span>            </div>
+
+</section>
+  </div>
+</div>
+                                                  <article id="node-200" class="node node-article clearfix" about="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" typeof="schema:Article sioc:Item foaf:Document">
+    <header>
+            <span property="schema:name" content="Page Factory Design Pattern (Enhanced POM)" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="13" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        <span class="submitted">
+            <span property="dc:date dc:created" content="2016-02-19T12:28:53-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/harrydev" typeof="sioc:UserAccount" property="foaf:name" datatype="">harrydev</span> on Fri, 02/19/2016 - 12:28</span>    </span>
+      </header>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="schema:articleBody content:encoded"><p>Selenium Page Factory Pattern is like an extension to <a href="http://www.seleniumeasy.com/selenium-tutorials/page-object-model-framework-introduction">Page Object Model </a>, but Page Factory is much enhanced model. To start with, we just need to import package ‘org.openqa.selenium.support.PageFactory’</p>
+<p class="pullquote-large">"Factory class can be used to make using Page Objects simpler and easier".</p>
+<p>We use <a href="https://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/support/PageFactory.html" target="_blank" rel="nofollow">Page Factory pattern</a> to initialize web elements which are defined in Page Objects.</p>
+<p>We should initialize page objects using initElements() method from PageFactory Class as below, Once we call initElements() method, all elements will get initialized. PageFactory.initElements() static method takes the driver instance of the given class and the class type, and returns a Page Object with its fields fully initialized. </p>
+<pre><code class=" hljs cs">Home homePage = <span class="hljs-keyword">new</span> HomePage(driver);
+PageFactory.initElements(driver, homePage);</code></pre><p>
+Or, </p>
+<pre><code class=" hljs cpp"><span class="hljs-comment">// To initialize elements.</span>
+HomePage homePage = PageFactory.initElements(driver, HomePage.<span class="hljs-keyword">class</span>);</code></pre><p>
+Or, <b>as a constructor for page class as below:</b></p>
+<pre><code class=" hljs cs"><span class="hljs-keyword">public</span> <span class="hljs-title">HompePage</span>(WebDriver driver) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<span class="hljs-keyword">this</span>.driver = driver; 
+PageFactory.initElements(driver, <span class="hljs-keyword">this</span>);
+}</code></pre><p>
+We should preferably use a constructor which takes a WebDriver instance as its only argument or falling back on a no-arg constructor. An exception will be thrown if the class cannot be instantiated.</p>
+<p>Page Factory will initialize every WebElement variable with a reference to a corresponding element on the actual web page based on “locators” defined. This is done by using <b>@FindBy annotations</b>. </p>
+<h4>Annotations?</h4>
+<p>In Page Factory, Annotations are used to give descriptive names for WebElements to improve code readability. And annotation <b>@FindBy</b> is used to identify Web Elements in the page.</p>
+<p>By default, PageFactory will search for elements on the page with a matching id attribute, If that fails, then it will search by the name attribute.  But as we need more control over identifying elements in the HTML page and mapping them to our Page Object fields. One way to do this is to use the @FindBy annotation, as shown in the following code:</p>
+<p>The <a href="https://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/support/FindBy.html" target="_blank" rel="nofollow">@FindBy</a> annotation supports all the other locators strategies that we use:<br>
+<b>id, name, className, css, xpath, tagName, linkText and partialLinkText</b> </p>
+<p>We can either use this annotation by specifying both "How" and "using" or by specifying any one of the location strategies (Eg: "id") </p>
+<pre><code class=" hljs cs">@FindBy(how = How.ID, <span class="hljs-keyword">using</span> = <span class="hljs-string">"username"</span>) 
+<span class="hljs-keyword">private</span> WebElement userName;</code></pre><p>
+We can re-write the above one as below:</p>
+<pre><code class=" hljs java"><span class="hljs-annotation">@FindBy</span>(id=<span class="hljs-string">"username"</span>)
+<span class="hljs-keyword">private</span> WebElement userName;</code></pre><p>
+And </p>
+<p>To work with class name, we will define as below: </p>
+<pre><code class=" hljs java"><span class="hljs-annotation">@FindBy</span>(className=<span class="hljs-string">".input.username"</span>)
+<span class="hljs-keyword">private</span> WebElement userName;</code></pre><p>
+<b>When we have multiple elements (list of WebElements), we can initialize them using PageFactory as below :</b></p>
+<pre><code class=" hljs java"><span class="hljs-annotation">@FindBy</span>(tagName = <span class="hljs-string">"mylist"</span>) 
+<span class="hljs-keyword">private</span> List&lt;WebElement&gt; links;</code></pre><p>
+Every time when a method is called on a WebElement, the driver will first find it on the current page and then simulate the action on the WebElement. There are cases where we will be working with a basic page, and we know that we will find the element on the page every time we look for it,  In such cases we can use annotation <b>‘@CacheLookup‘</b>  which is another annotation in page factory</p>
+<pre><code class=" hljs java"><span class="hljs-annotation">@FindBy</span>(name=<span class="hljs-string">"username"</span>)
+<span class="hljs-annotation">@CacheLookup</span>
+<span class="hljs-keyword">private</span> WebElement userName;</code></pre><h4>What is @CacheLookup annotation in PageFactory?</h4>
+<p>We will mark <b><i>annotation @CacheLookup</i></b> to WebElements to indicate that it never changes (that is, that the same instance in the DOM will always be used)<br>
+CacheLookup attribute can be used to instruct the InitElements() method to cache the element once its located and so that it will not be searched over and over again – this is useful when the elements that are always going to be there<br>
+(For AJAX based applications, it may not work where the DOM changes based on user action on the page). Otherwise every time when we use a Web Element the WebDriver will go and search it again</p>
+<p>But whenever we use <a href="https://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/support/CacheLookup.html" target="_blank" rel="nofollow">@CacheLookup</a> annotation, we will be losing one of the page factory benefit as it will find the element once and then keep a reference to it, hence, we are more likely to see <a href="http://www.seleniumeasy.com/selenium-tutorials/staleelementreferenceexception-in-selenium-webdriver">StaleElementExceptions.</a></p>
+<h4>AjaxElementLocatorFactory</h4>
+<p> <a href="https://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/support/pagefactory/AjaxElementLocatorFactory.html" target="_blank" rel="nofollow">AjaxElementLocatorFactory</a> is a lazy load concept in Page Factory pattern to identify WebElements only when they are used in any operation i.e. a timeOut for a WebElement can be assigned to the Object page class with the help of AjaxElementLocatorFactory.</p>
+<p> <b>Example: </b></p>
+<pre><code class=" hljs java"><span class="hljs-javadoc">/*** 
+* Constructor 
+*<span class="hljs-javadoctag"> @param</span> driver an instance of WebDriver 
+*/</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> TimeoutValue = <span class="hljs-number">30</span>;
+<span class="hljs-keyword">public</span> <span class="hljs-title">SearchResultsPage</span>(Webdriver driver) { 
+&nbsp;&nbsp;&nbsp; PageFactory.initElements(<span class="hljs-keyword">new</span> AjaxElementLocatorFactory(driver, TimeoutValue), <span class="hljs-keyword">this</span>);
+}</code></pre><p>
+The above code will wait for maximum of 30 seconds until the elements specified by annotations is loaded. If the element is not found in the given time interval, it will throw NoSuchElementException' exception.</p>
+<p><b>Conclusion :</b></p>
+<p>In fact, we can use the page object pattern without using the Page Factory class. The page object pattern simply abstracts business logic away from the physical structure of the pages. And the Page Factory class gives us the ability to use annotations which automatically find the elements on the page without specifying findElement.</p>
+<p>Below is the sample code for Page Object Model in Selenium:</p>
+<pre><code class=" hljs cs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> BasePage {
+
+<span class="hljs-keyword">private</span> By username = By.id(<span class="hljs-string">"username"</span>);
+<span class="hljs-keyword">private</span> By password = By.id(<span class="hljs-string">"password"</span>);
+<span class="hljs-keyword">private</span> By loginBtn = By.name(<span class="hljs-string">"loginbtn"</span>);
+
+&nbsp; <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">userLogin</span>(String userName, String password) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; driver.findElement(username).sendKeys(<span class="hljs-string">"testuser"</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; driver.findElement(password).sendKeys(<span class="hljs-string">"testpassword"</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; driver.findElement(loginBtn).click();
+&nbsp; }
+}</code></pre><p>
+And the below is the simple code written using Page Factory in Selenium:</p>
+<pre><code class=" hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasePage</span> {</span>
+&nbsp; <span class="hljs-annotation">@FindBy</span>(id= <span class="hljs-string">"username"</span>) <span class="hljs-keyword">private</span> WebElement userName;
+&nbsp; <span class="hljs-annotation">@FindBy</span>(id= <span class="hljs-string">"password"</span>) <span class="hljs-keyword">private</span> WebElement password;
+&nbsp; <span class="hljs-annotation">@FindBy</span>(id= <span class="hljs-string">"login"</span>) <span class="hljs-keyword">private</span> WebElement loginBtn;
+
+&nbsp; <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">userLogin</span>(String userName, String password) {
+&nbsp;&nbsp;&nbsp; userName.sendKeys(userName);
+&nbsp;&nbsp;&nbsp; password.sendKeys(password);
+&nbsp;&nbsp;&nbsp; loginBtn.click();
+&nbsp; }
+}</code></pre></div></div></div><ul class="flippy">
+          
+    <li class="prev">
+              <a href="https://www.seleniumeasy.com/selenium-tutorials/parallel-execution-in-selenium-grid" title="‹ Execute webdriver tests in Parallel using selenium Grid ">‹ Execute webdriver tests in Parallel using selenium Grid </a>          </li>
+          
+    <li class="next">
+              <a href="https://www.seleniumeasy.com/appium-tutorials/introduction-to-appium-mobile-automation" title="Introduction to Appium Mobile Automation ›">Introduction to Appium Mobile Automation ›</a>          </li>
+  </ul>
+
+<div class="field field-name-field-selenium-category field-type-taxonomy-term-reference field-label-above"><div class="field-label">Selenium Tutorials:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="https://www.seleniumeasy.com/selenium-tutorials" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Selenium Tutorials</a></div></div></div><span rel="schema:url" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><span property="schema:name" content="Page Factory Design Pattern (Enhanced POM)" class="rdf-meta element-hidden"></span><script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(10).txt" crossorigin="anonymous" data-checked-head="true"></script><p><ins class="adsbygoogle" style="display: block; height: 441px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-8248225602828359" data-ad-slot="3283069827" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 441px; width: 883px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:883px;height:441px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="883" height="441" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CPCqs6-vxP0CFRsKewodV_AI2Q" data-load-complete="true"></iframe></div></ins></p>
+<script>
+<!--//--><![CDATA[// ><!--
+(adsbygoogle = window.adsbygoogle || []).push({});
+//--><!]]>
+</script>    <footer>
+    <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tags:&nbsp;</div><div class="field-items"><div class="field-item even" rel="dc:subject"><a href="https://www.seleniumeasy.com/tags/frameworks" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Frameworks</a></div><div class="field-item odd" rel="dc:subject"><a href="https://www.seleniumeasy.com/tags/page-object-model" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Page Object Model</a></div></div></div>    <ul class="links list-inline"><li class="comment-add first last active"><a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver#comment-form" title="Share your thoughts and opinions related to this posting." class="active">Add new comment</a></li>
+</ul>  </footer>
+    <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  <a id="comment-3824"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/3824#comment-3824" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/3824#comment-3824" class="permalink" rel="bookmark">Good explanation</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/3824#comment-3824" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2016-03-29T04:05:50-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Rajan Verma</span> on Tue, 03/29/2016 - 04:05</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>This is really good explanation. By reading this i got my existing problem solved. Thanks</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/3824">reply</a></li>
+</ul></div>
+<a id="comment-4194"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/4194#comment-4194" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/4194#comment-4194" class="permalink" rel="bookmark">Thanks for sharing  great</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/4194#comment-4194" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2016-04-20T02:36:00-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Susmitha Sanjay</span> on Wed, 04/20/2016 - 02:36</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Thanks for sharing  great information in your blog. Got to learn new things from your Blog . It was very nice blog to learn about Selenium</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/4194">reply</a></li>
+</ul></div>
+<a id="comment-4386"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/4386#comment-4386" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/4386#comment-4386" class="permalink" rel="bookmark">PageFactory</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/4386#comment-4386" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2016-04-29T06:23:52-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Baburaj V D</span> on Fri, 04/29/2016 - 06:23</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>1. How can we use page factory elements when we need to copy a group of elements to a list array(List&lt;Web Element&gt;) ?<br>
+2. How can we manipulate explicit waits for the elements where we need to check invisibility of those elements ?</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/4386">reply</a></li>
+</ul></div>
+<a id="comment-6750"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/6750#comment-6750" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/6750#comment-6750" class="permalink" rel="bookmark">POM</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/6750#comment-6750" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2016-09-19T07:07:55-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Vishwanath Shetty</span> on Mon, 09/19/2016 - 07:07</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>How this Page Factory Pattern is useful?</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/6750">reply</a></li>
+</ul></div>
+<a id="comment-6877"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/6877#comment-6877" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/6877#comment-6877" class="permalink" rel="bookmark">AjaxElementLocatorFactory</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/6877#comment-6877" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2016-09-28T03:26:18-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">suresh</span> on Wed, 09/28/2016 - 03:26</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Can you please provide more details abount AjaxElementLocatorFactory</p>
+<p> PageFactory.initElements(new AjaxElementLocatorFactory(driver, TimeoutValue), this);</p>
+<p>usually we pass driver as parameter but you mentioned -  new AjaxElementLocatorFactory(driver, TimeoutValue)</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/6877">reply</a></li>
+</ul></div>
+<a id="comment-8175"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/8175#comment-8175" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/8175#comment-8175" class="permalink" rel="bookmark">selenium</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/8175#comment-8175" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2016-12-20T15:10:59-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">avinash sanantaray</span> on Tue, 12/20/2016 - 15:10</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>its very good site n well display.but i need some real time exa<br>
+mples</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/8175">reply</a></li>
+</ul></div>
+<a id="comment-8599"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/8599#comment-8599" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/8599#comment-8599" class="permalink" rel="bookmark">Web Element initialisation</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/8599#comment-8599" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2017-01-16T10:37:23-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jithin</span> on Mon, 01/16/2017 - 10:37</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Which web element initialisation is good ? I mean as a constructor or in Test Class.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/8599">reply</a></li>
+</ul></div>
+<a id="comment-11982"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/11982#comment-11982" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/11982#comment-11982" class="permalink" rel="bookmark">Page factory</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/11982#comment-11982" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2017-04-15T04:35:10-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Janardhan</span> on Sat, 04/15/2017 - 04:35</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Thanks for sharing this information. It's very useful and easy to understand.</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/11982">reply</a></li>
+</ul></div>
+<a id="comment-13568"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/13568#comment-13568" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/13568#comment-13568" class="permalink" rel="bookmark">Page Factory and UI Map in property file</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/13568#comment-13568" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2017-05-31T03:53:49-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Jonathan</span> on Wed, 05/31/2017 - 03:53</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>In another article relating to Selenium test framework, it is said that the UI element locators could by put as key-value properties in UI map file. But if getting locator from the property files, they are imported as string variables and thus not able to be used in annotation"@FindBy".</p>
+<p>Is there a way to import UI map property files together with page factory? Looking forward to seeing your reply.</p>
+<p>Sincerely<br>
+Jonathan</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/13568">reply</a></li>
+</ul></div>
+<a id="comment-14746"></a>
+<div class="comment comment-by-anonymous clearfix" about="/comment/14746#comment-14746" typeof="sioc:Post sioct:Comment">
+  
+  
+    <h3 property="dc:title" datatype=""><a href="https://www.seleniumeasy.com/comment/14746#comment-14746" class="permalink" rel="bookmark">How to Identy Random Value by Using Xpath</a></h3>
+  
+  <div class="submitted">
+    <a href="https://www.seleniumeasy.com/comment/14746#comment-14746" class="permalink" rel="bookmark">Permalink</a>    <span property="dc:date dc:created" content="2017-07-24T03:10:44-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Viewer</span> on Mon, 07/24/2017 - 03:10</span>  </div>
+
+  <div class="content">
+    <span rel="sioc:reply_of" resource="/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hi,</p>
+<p>&lt;div id=“product”&gt;sdfsf&lt;/div&gt;&lt;div id=“product”&gt;abc&lt;/div&gt;&lt;div id=“product”&gt;vdvd&lt;/div&gt;&lt;div id=“product”&gt;dcd&lt;/div&gt;&lt;div id=“product”&gt;cdcd&lt;/div&gt; In that how to select Random Input</p>
+</div></div></div>      </div>
+
+  <ul class="links list-inline"><li class="comment-reply first last"><a href="https://www.seleniumeasy.com/comment/reply/200/14746">reply</a></li>
+</ul></div>
+<div class="text-center"><ul class="pagination"><li class="active"><span>1</span></li>
+<li><a title="Go to page 2" href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver?page=1">2</a></li>
+<li class="next"><a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver?page=1">next</a></li>
+<li class="pager-last"><a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver?page=1">last</a></li>
+</ul></div>
+      <h2 class="title comment-form">Add new comment</h2>
+    <form class="comment-form" action="https://www.seleniumeasy.com/comment/reply/200" method="post" id="comment-form" accept-charset="UTF-8"><div><div class="form-item form-item-name form-type-textfield form-group"> <label class="control-label" for="edit-name">Your name</label>
+<input class="form-control form-text" type="text" id="edit-name" name="name" value="" size="30" maxlength="60"></div><div class="form-item form-item-subject form-type-textfield form-group"> <label class="control-label" for="edit-subject">Subject</label>
+<input class="form-control form-text" type="text" id="edit-subject" name="subject" value="" size="60" maxlength="64"></div><div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper form-group" id="edit-comment-body"><div id="comment-body-add-more-wrapper"><div class="text-format-wrapper"><div class="form-item form-item-comment-body-und-0-value form-type-textarea form-group"> <label class="control-label" for="edit-comment-body-und-0-value">Comment <span class="form-required" title="This field is required.">*</span></label>
+<div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea class="text-full form-control form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea><div class="grippie"></div></div></div><fieldset class="filter-wrapper form-inline panel panel-default form-wrapper" id="edit-comment-body-und-0-format">
+    <div class="panel-body" id="edit-comment-body-und-0-format-body">
+        <div class="filter-help form-wrapper form-group" id="edit-comment-body-und-0-format-help"><a href="https://www.seleniumeasy.com/filter/tips" target="_blank" title="" data-toggle="tooltip" data-original-title="Opens in new window"><span class="icon glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+More information about text formats</a></div>  </div>
+</fieldset>
+</div>
+</div></div><input type="hidden" name="form_build_id" value="form-B9fO4Kh0ztTfWGF-pNoMXpJu9EQdW6LFO3mdjVCDI60">
+<input type="hidden" name="form_id" value="comment_node_article_form">
+<fieldset class="captcha panel panel-default form-wrapper" id="bootstrap-panel">
+          <legend class="panel-heading">
+      <span class="panel-title fieldset-legend">CAPTCHA</span>
+    </legend>
+        <div class="panel-body" id="bootstrap-panel-body">
+    <div class="help-block">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div>    <input type="hidden" name="captcha_sid" value="21398772">
+<input type="hidden" name="captcha_token" value="fcee1348eacc2ce2dcb5524772bfb711">
+<input type="hidden" name="captcha_response" value="Google no captcha">
+<div class="g-recaptcha" data-sitekey="6LeSNbYUAAAAAFBeDEu0fekf9iB1VpvFqha56ltm" data-theme="light" data-type="image"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/anchor.html" width="304" height="78" role="presentation" name="a-ezsaveus4gxm" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/saved_resource(4).html"></iframe></div><input type="hidden" name="captcha_cacheable" value="1">
+  </div>
+</fieldset>
+<div class="form-actions form-wrapper form-group" id="edit-actions"><button type="submit" id="edit-submit" name="op" value="Save" class="btn btn-success form-submit icon-before"><span class="icon glyphicon glyphicon-ok" aria-hidden="true"></span>
+ Save</button>
+<button type="submit" id="edit-preview" name="op" value="Preview" class="btn btn-default form-submit">Preview</button>
+</div></div></form>  </div>
+</article>
+    </section>
+
+          <aside class="col-sm-3" role="complementary" style="height: auto !important; min-height: 0px !important;">
+          <div class="region region-sidebar-second" style="height: auto !important;">
+    <section id="block-block-72" class="block block-block clearfix" style="height: auto !important;">
+
+      
+  <script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(10).txt" crossorigin="anonymous" data-checked-head="true"></script><!-- side1 --><p><ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-8248225602828359" data-ad-slot="2750772258" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_3_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 250px; width: 321px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:321px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="321" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/ads(2).html" data-google-container-id="a!4" data-google-query-id="CP7AlqyuxP0CFWz-uwgdQj8PYg" data-load-complete="true"></iframe></div></ins></p>
+<script>
+<!--//--><![CDATA[// ><!--
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+
+//--><!]]>
+</script>
+</section>
+<section id="block-block-65" class="block block-block clearfix">
+
+      
+  <div class="fancy-collapse-panel">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingOne">
+<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver#collapseOne" aria-expanded="true" aria-controls="collapseOne">Selenium Popular Posts</a><br>
+						</h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body item-list">
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver" title="">Page Factory Framework</a></li>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/simple-page-object-model-framework-example" title="">POM example</a></li>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/how-to-configure-selenium-grid" title="">Working with Selenium Grid</a></li>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/click-element-using-javascriptexecutor" title="">Click element with JavaScriptExecutor</a></li>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/css-selectors-tutorial-for-selenium-with-examples" title="">Css selectors examples</a></li>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingTwo">
+<h4 class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">TestNG Popular Posts<br>
+                                    </a><br>
+						</h4>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+<div class="panel-body item-list">
+<li class="item-list"><a href="https://www.seleniumeasy.com/testng-tutorials/assertions-in-testng" title="">Assertions in TestNG</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/testng-tutorials/parallel-execution-of-classes-in-testng" title="">Parallel Execution in TestNG</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/testng-tutorials/how-to-run-testng-xml-webdriver-tests-from-command-line" title="">Run testng.xml from command line</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example" title="">Customize TestNG Emailable Report</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/maven-tutorials/how-to-execute-selenium-webdriver-testng-xml-using-maven" title="">Execute testng tests using Maven</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/maven-tutorials/choose-selected-testng-xml-files-to-execute-using-maven" title="">Parametrize testng.xml using Maven</a></li>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingThree">
+<h4 class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver#collapseThree" aria-expanded="false" aria-controls="collapseThree">Jenkins Popular Posts<br>
+                                    </a><br>
+						</h4>
+</div>
+<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+<div class="panel-body item-list">
+<li class="item-list"><a href="https://www.seleniumeasy.com/jenkins-tutorials/invoke-testng-xml-tests-from-jenkins" title="">Execute testng.xml from Jenkins</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/jenkins-tutorials/configure-maven-project-jenkins-example" title="">Configure Maven project in Jenkins</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/jenkins-tutorials/set-up-testng-reports-in-jenkins" title="">Configure test reports in Jenkins</a></li>
+<li class="item-list"><a href="https://www.seleniumeasy.com/jenkins-tutorials/configure-maven-github-jenkins-to-run-testng.xml" title="">Configure Jenkins with Maven &amp; Git</a></li>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<section id="block-views-tags-cloud-block" class="block block-views clearfix">
+
+        <h2 class="block-title">Tags Cloud</h2>
+    
+  <div class="view view-tags-cloud view-id-tags_cloud view-display-id-block view-dom-id-4db4dccd660dfe87e2e7c7562670382c">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/allure">Allure</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/allure-report">Allure report</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/appium-android">Appium Android</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(11)</span>  </span>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/appium-ios">Appium IOS</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/asserts">Asserts</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/autocomplete">AutoComplete</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/autoit">AutoIt</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-8 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/taxonomy/term/37">Automation</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(5)</span>  </span>  </div>
+  <div class="views-row views-row-9 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/buildxml">Build.xml</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-10 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/checkboxes">Checkboxes</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-11 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/cloud-execution">Cloud Execution</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-12 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/codeless-automation-testing">Codeless Automation Testing</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-13 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/cookies">Cookies</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(3)</span>  </span>  </div>
+  <div class="views-row views-row-14 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/css">Css</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-15 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/css-examples">Css Examples</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-16 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/database-testing">Database Testing</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-17 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/dataprovider">DataProvider</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-18 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/date-picker">Date Picker</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-19 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/desktop-app-testing">desktop app testing</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-20 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/drag-and-drop">Drag and Drop</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-21 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/excel">Excel</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(5)</span>  </span>  </div>
+  <div class="views-row views-row-22 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/exceptions">Exceptions</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(4)</span>  </span>  </div>
+  <div class="views-row views-row-23 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/extent-report">Extent Report</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-24 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/file-download">File Download</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(3)</span>  </span>  </div>
+  <div class="views-row views-row-25 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/firefox-profile">Firefox Profile</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-26 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/frameworks">Frameworks</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(6)</span>  </span>  </div>
+  <div class="views-row views-row-27 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/grid">Grid</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(5)</span>  </span>  </div>
+  <div class="views-row views-row-28 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/headless">Headless</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-29 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/iframes">iFrames</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-30 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/images">Images</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-31 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/taxonomy/term/45">Interview Questions</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-32 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/javascriptexecutor">JavascriptExecutor</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(3)</span>  </span>  </div>
+  <div class="views-row views-row-33 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/jenkins">Jenkins</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-34 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/jmeter-assertion-examples">JMeter Assertion Examples</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-35 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/taxonomy/term/35">JUnit</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-36 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/katalon">Katalon</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-37 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/katalon-studio">Katalon Studio</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(6)</span>  </span>  </div>
+  <div class="views-row views-row-38 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/keyword-driven">Keyword Driven</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-39 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/listeners">Listeners</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(9)</span>  </span>  </div>
+  <div class="views-row views-row-40 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/locators">Locators</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-41 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/log4j">Log4j</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(4)</span>  </span>  </div>
+  <div class="views-row views-row-42 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/log4jxml">log4j.xml</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-43 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/taxonomy/term/40">Manual Testing</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-44 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/maven">Maven</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(6)</span>  </span>  </div>
+  <div class="views-row views-row-45 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/mouse-hover">Mouse Hover</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+  <div class="views-row views-row-46 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/page-object-model">Page Object Model</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(4)</span>  </span>  </div>
+  <div class="views-row views-row-47 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/page-scroll">Page Scroll</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(1)</span>  </span>  </div>
+  <div class="views-row views-row-48 views-row-even">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/parallel-test">Parallel Test</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(3)</span>  </span>  </div>
+  <div class="views-row views-row-49 views-row-odd">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/performance-testing">Performance Testing</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(10)</span>  </span>  </div>
+  <div class="views-row views-row-50 views-row-even views-row-last">
+      
+  <div class="views-field views-field-name">        <span class="field-content"><a href="https://www.seleniumeasy.com/tags/processors">Processors</a></span>  </div>  
+  <span class="views-field views-field-nid">        <span class="field-content">(2)</span>  </span>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section>
+<section id="block-block-73" class="block block-block clearfix" style="height: auto !important;">
+
+      
+  <div id="stick" style="height: auto !important;">
+<script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/f(10).txt" crossorigin="anonymous" data-checked-head="true"></script><!-- verticalBtm --><p style="height: auto !important;"><ins class="adsbygoogle gvad" style="display: block; height: auto !important; min-height: 0px !important;" data-ad-client="ca-pub-8248225602828359" data-ad-slot="8304752770" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_4_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 268px; width: 321px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden;"><iframe id="aswift_4" name="aswift_4" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 321px; height: 268px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="321" height="268" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/ads(3).html" data-google-container-id="a!5" data-google-query-id="CLGbkKyuxP0CFS8MewodpgAIfQ" data-load-complete="true"></iframe></div></ins></p>
+<script>
+<!--//--><![CDATA[// ><!--
+(adsbygoogle = window.adsbygoogle || []).push({});
+//--><!]]>
+</script></div>
+
+</section>
+  </div>
+      </aside>  <!-- /#sidebar-second -->
+    
+  </div>
+</div>
+
+  <footer id="footer" class="footer site-footer container-fluid">
+      <div class="region region-footer">
+    <section id="block-block-28" class="block block-block clearfix">
+
+      
+  <div class="col-md-12">
+<div class="col-md-3">
+<h4>Follow Us</h4>
+<ul class="social-network social-circle">
+<li><a href="https://www.facebook.com/seleniumeasy/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/seleniumeasy" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://plus.google.com/+Seleniumeasy" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="https://www.linkedin.com/in/kdevendraraju" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+<ul>
+<li><a href="https://dl.flipkart.com/dl/?affid=kdevendra3" target="_blank" class="" title="Flipkart">Flipkart</a></li>
+<li><a href="https://www.amazon.in//ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll2&amp;tag=seleeasy-21&amp;linkId=134a04c9f4cc4a17135b32246e4ca4d9" target="_blank" class="" title="Amazon">Amazon IN</a></li>
+</ul></div>
+<div class="col-md-3">
+<h4>Menu</h4>
+<ul>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials" title="selenium tutorials">Selenium Tutorials</a></li>
+<li><a href="https://www.seleniumeasy.com/testng-tutorials" title="testng tutorials">TestNG Tutorial</a></li>
+<li><a href="https://www.seleniumeasy.com/junit-tutorials" title="junit tutorials">JUnit Tutorial</a></li>
+<li><a href="https://www.seleniumeasy.com/jxl-tutorials" title="jexcel tutorials">JXL Tutorial</a></li>
+<li><a href="https://www.seleniumeasy.com/apachepoi-tutorials" title="apache poi">Apache POI</a></li>
+<li><a href="https://www.seleniumeasy.com/ant-tutorials" title="ant tutorials">ANT Tutorial</a></li>
+<li><a href="https://www.seleniumeasy.com/maven-tutorials" title="maven tutorials">Maven Tutorial</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h4>Popular Posts</h4>
+<ul>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/launching-firefox-browser-with-geckodriver-selenium-3">Gecko Driver Selenium 3</a></li>
+<li><a href="https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver">Page Factory Pattern</a></li>
+<li><a href="https://www.seleniumeasy.com/jenkins-tutorials/invoke-testng-xml-tests-from-jenkins">Execute Tests in Jenkins </a></li>
+<li><a href="https://www.seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example">TestNG Custom Report</a></li>
+<li><a href="https://www.seleniumeasy.com/maven-tutorials/how-to-execute-selenium-webdriver-testng-xml-using-maven">Execute Selenium tests using Maven</a></li>
+<li><a href="https://www.seleniumeasy.com/selenium-webdriver-tutorials">View All Selenium Tutorials</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<div id="mc_embed_signup">
+<form action="https://seleniumeasy.us15.list-manage.com/subscribe/post?u=a5d2efe08ad93a8b91b578279&amp;id=5d70235043" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+<div id="mc_embed_signup_scroll" class="form-group">
+<h4>Subscribe to our mailing list</h4>
+<p>	<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required=""></p>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5d2efe08ad93a8b91b578279_5d70235043" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger"></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+</section>
+  </div>
+  </footer>
+
+  <div id="footer_bar" class="footer-bar container-fluid">
+      <div class="region region-footer-bar">
+    <section id="block-block-56" class="block block-block clearfix">
+
+      
+  <div class="content">
+<div class="footer-left">
+<div>© 2016 Selenium Easy. All Rights Reserved.</div>
+</div>
+<div class="footer-right"><a href="https://www.seleniumeasy.com/">Home</a><a href="https://www.seleniumeasy.com/about-us">About</a><a href="https://www.seleniumeasy.com/contact">Contact</a><a href="https://www.seleniumeasy.com/privacy-policy">Privacy Policy</a><a href="https://www.seleniumeasy.com/sitemap">Sitemap</a><a href="https://play.google.com/store/apps/details?id=com.seleniumeasy.seleniumeasy" target="_blank" class="icoAndroid" title="Android play Store">Android App</a></div>
+</div>
+
+</section>
+  </div>
+  </div>
+  <script src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/bootstrap(1).js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.seleniumeasy.com",
+  "name": "Selenium Easy",
+  "logo": "https://www.seleniumeasy.com/sites/all/themes/seasy/logo.png",
+  "contactPoint": [
+    { "@type": "ContactPoint",
+      "telephone": "+91-996-301-2045",
+      "contactType": "customer service"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.seleniumeasy.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://seleniumeasy.com/search/node/{search_block_form}",
+    "query-input": "required name=search_block_form"
+  }
+}
+</script>
+
+<script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id":"https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver"
+  },
+  "headline":"Page Factory Design Pattern (Enhanced POM)",
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://www.seleniumeasy.com/sites/all/themes/seasy/logo.png",
+    "height": 120,
+    "width": 120
+  },
+  "datePublished":"2016-02-19T17:28:53+00:00",
+  "dateModified": "2018-11-18T10:09:14+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Devendra Raju K"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Selenium Easy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.seleniumeasy.com/sites/all/themes/seasy/logo.png",
+      "width": 120,
+      "height": 128
+    }
+  },
+  "description":"Page Factory Design Pattern (Enhanced POM)"
+}</script>
+<script async="" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/html5shiv-printshiv.min.js"></script>
+
+  
+
+<button id="backtotop" class="jquery-once-2-processed">Back to top</button><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/ads(4).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/bframe.html" name="c-ezsaveus4gxm" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><iframe src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/zrt_lookup.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true"><div id="aswift_5_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_5" name="aswift_5" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Page Factory Design Pattern (Enhanced POM) _ Selenium Easy_files/zrt_lookup(1).html" data-google-container-id="a!6" data-google-query-id="CLnJj6yuxP0CFQRB9ggdmYsP9Q" data-load-complete="true"></iframe></div></ins></html>

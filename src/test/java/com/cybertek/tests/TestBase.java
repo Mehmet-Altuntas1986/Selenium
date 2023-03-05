@@ -18,19 +18,19 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase { //Test base i olusturmamizimn sebebi herbir test case de before and after methodu tekrar ve tekrar yazmamak , bu class i olusturdum
-                      //We initiliaze everything in our testBase
+public class TestBase { // Test base i olusturmamizimn sebebi herbir test case de before and after methodu tekrar ve tekrar yazmamak , bu class i olusturdum
+                      // We initiliaze everything in our testBase
 
-    protected WebDriver driver;  //protected i ekleyince 2 class arasinda baglanti kurulabildi , logintest(day12) teki driver hata vermedi
+    protected WebDriver driver;  //protected i ekleyince 2 class arasinda baglanti kurulabildi , logintest(day12) deki driver hata vermedi
     protected Actions actions;  //bu line ve before methodun icinde son line a ekleme yapildi
-    protected WebDriverWait wait;   //explicit
+    protected WebDriverWait wait; //explicit
 
     //this class is used for starting and building reports  --day14 --copy paste +protected yaptim
     protected ExtentReports report;
     //this class is used to create HTML report file
     protected ExtentHtmlReporter htmlReporter;
     //this will  define a test, enables adding logs, authors, test steps
-    protected ExtentTest extentLogger;
+    protected ExtentTest extentTestLogger;
 
     @BeforeTest
     public void SetUpTest(){  //day-14-copy paste here
@@ -80,21 +80,21 @@ public class TestBase { //Test base i olusturmamizimn sebebi herbir test case de
 
                //ITestResult CLASS DESCRIBES THE RESULT OF A TEST IN TestNG
     @AfterMethod
-    public void tearDown(ITestResult result) throws InterruptedException, IOException {  // ITestResult class is from  testng
+    public void tearDown(ITestResult result) throws InterruptedException, IOException {  // ITestResult Interface is from  testng
         //if test fails        ---note herzaman screenshot almiyoruz bu durumda
         if (result.getStatus()==ITestResult.FAILURE){  //int , 2 int degeri- failure i gosteriyor ---nokta ya tiklayinca gorursun secenekleri
 
              //record the name of failed test case
-            extentLogger.fail( result.getName() );                //test case in ismine result.getName ile ulasiyor
+            extentTestLogger.fail( result.getName() );                //test case in ismine result.getName ile ulasiyor
 
             //take the screenschot and return location of screenshot
             String screenShotPath= BrowserUtils.getScreenshot(result.getName()  );  //screenshot is ready , now i should attach it to reports
 
             //add your screenshot to your report
-            extentLogger.addScreenCaptureFromPath( screenShotPath );
+            extentTestLogger.addScreenCaptureFromPath( screenShotPath );
 
             //capture the exception and put inside the report
-            extentLogger.fail( result.getThrowable() );
+            extentTestLogger.fail( result.getThrowable() );
         }
         Thread.sleep( 2000 );
         Driver.closeDriver();

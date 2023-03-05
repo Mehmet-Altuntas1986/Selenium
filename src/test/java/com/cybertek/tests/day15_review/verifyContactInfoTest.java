@@ -24,26 +24,26 @@ public class verifyContactInfoTest extends TestBase {  //ilk once manuel olarak 
     @Test
     public void contactDetailsTest(){
 
-        extentLogger = report.createTest("Contact Info Verification");
+        extentTestLogger = report.createTest("Contact Info Verification");
 
         LoginPage loginPage = new LoginPage();
 
         String username = ConfigurationReader.get("salesmanager_username");
         String password = ConfigurationReader.get("salesmanager_password");
 
-        extentLogger.info("username: "+username);
-        extentLogger.info("password: "+password);
+        extentTestLogger.info("username: "+username);
+        extentTestLogger.info("password: "+password);
 
-        extentLogger.info("Login as a Sales Manager");
+        extentTestLogger.info("Login as a Sales Manager");
         loginPage.login(username,password);
 
-        extentLogger.info("Navigate to --> Customers > Contacts");
+        extentTestLogger.info("Navigate to --> Customers > Contacts");
         //Dascboard page de baska bisey yapmayacagimiz icin DashboardPage dbpage=  new DashboardPage()  demedi, dediki sadece birkez kullanacagimiz icin bu lazy way i kullananbilirsin
         new DashboardPage().navigateToModule("Customers","Contacts");  //object olusumunda esitligin sag kismiyla nokta koyup islemi bitirme
 
         ContactsPage contactsPage = new ContactsPage();
 
-        extentLogger.info("Click on mbrackstone9@example.com");
+        extentTestLogger.info("Click on mbrackstone9@example.com");
         contactsPage.waitUntilLoaderScreenDisappear();
         contactsPage.getContactEmail("mbrackstone9@example.com").click();
 
@@ -52,16 +52,16 @@ public class verifyContactInfoTest extends TestBase {  //ilk once manuel olarak 
         String expectedFullName = "Mariam Brackstone";
         String actualFullName = contactInfoPage.fullName.getText();
 
-        extentLogger.info("Verify full name is "+ expectedFullName);
+        extentTestLogger.info("Verify full name is "+ expectedFullName);
         Assert.assertEquals(actualFullName,expectedFullName,"verify fullname");
 
-        extentLogger.info("verify email is mbrackstone9@example.com");
+        extentTestLogger.info("verify email is mbrackstone9@example.com");
         Assert.assertEquals(contactInfoPage.email.getText(),"mbrackstone9@example.com","Verify email");
 
-        extentLogger.info("verify phone number is +18982323434");
+        extentTestLogger.info("verify phone number is +18982323434");
         Assert.assertEquals(contactInfoPage.phone.getText(),"+18982323434","verify phone number");
 
-        extentLogger.pass("PASSED");
+        extentTestLogger.pass("PASSED");
 
     }
 

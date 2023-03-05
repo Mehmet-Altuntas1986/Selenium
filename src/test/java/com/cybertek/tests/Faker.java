@@ -1,13 +1,12 @@
 package com.cybertek.tests;
 
 import com.github.javafaker.CreditCardType;
-import com.github.javafaker.Faker;
 
-public class first_lesson {
+public class Faker {
     public static void main(String[] args) {
         System.out.println("Hello World");   //sout  then enter ---> short cut
 
-        Faker faker =new Faker();   //bu method dummy, fake data olusturmakta kullaniliyor
+        com.github.javafaker.Faker faker =new com.github.javafaker.Faker();   //bu method dummy, fake data olusturmakta kullaniliyor
 
         System.out.println(faker.name().fullName());
         System.out.println(faker.harryPotter().character());

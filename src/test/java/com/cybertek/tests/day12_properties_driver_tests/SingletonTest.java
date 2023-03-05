@@ -40,4 +40,4 @@ public class SingletonTest {   //Singleton deyince su aklima gelecek--> ayni obj
 }
 
 // WebDriverFactory yerine daha gelismis olanini Driver clasini (in utilities package) singleton olarak kullanacagiz
-// Driver.get() methodu ile driver i elde ederiz, sonra driver.get("url")
+// Driver.get() methodu ile driver i elde ederiz, sonra driver.get("url")   yani aslinda su olur WebDriver driver= Driver.get()

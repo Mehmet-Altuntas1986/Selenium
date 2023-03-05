@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="file path example -day 10 modified">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_21_21_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23,_21_21_[Default_Changelist]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23__21_21__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_03_23__21_21__Default_Changelist_1.xml" afterDir="false" />
+    <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="FileInputStream deki file Properties obj nine aktarildi">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/pageFactory.initelelements.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/what is object initialization.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/FileUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/FileUploadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/Screenshot 2022-10-03 at 14.58.07.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_file_upload/file.txt file uploaded.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/PropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/SingletonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day13_pom/NegativeLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day13_pom/NegativeLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day15_review/verifyContactInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day15_review/verifyContactInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/DDFLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/DDFLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/Utilities/ConfigurationReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/Utilities/ConfigurationReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day15_review/verifyContactInfoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day16_ddf/DDFLoginTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +31,13 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -45,108 +63,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/Users/mehmetaltuntas/Desktop/projects/Eu3TestNGSelenium"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_popups_tabs_frames" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf" />
-      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day10_actions_js" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FileUploadTest.test1">
-    <configuration name="FilePathExample.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AnotherLoginTest.test1">
+    <configuration name="AnotherLoginTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day10_file_upload.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day12_properties_driver_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_file_upload" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_file_upload.FilePathExample" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day12_properties_driver_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day12_properties_driver_tests.AnotherLoginTest" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileUploadTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day10_file_upload.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_file_upload" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_file_upload.FileUploadTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavaScriptExecuterDemo.ScrollDownAndUp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day10_actions_js.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_actions_js" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_actions_js.JavaScriptExecuterDemo" />
-      <option name="METHOD_NAME" value="ScrollDownAndUp" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavaScriptExecuterDemo.clickWithJS" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day10_actions_js.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_actions_js" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_actions_js.JavaScriptExecuterDemo" />
-      <option name="METHOD_NAME" value="clickWithJS" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavaScriptExecuterDemo.typeWithJS" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day10_actions_js.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day10_actions_js" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day10_actions_js.JavaScriptExecuterDemo" />
-      <option name="METHOD_NAME" value="typeWithJS" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -172,13 +117,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebTablesExample.getAllHeaders" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
+      <option name="METHOD_NAME" value="getAllHeaders" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesExample.getRow" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
+      <option name="METHOD_NAME" value="getRow" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesExample.printAllCellsByIndex" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
+      <option name="METHOD_NAME" value="printAllCellsByIndex" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesExample.printTable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
+      <option name="METHOD_NAME" value="printTable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FileUploadTest.test1" />
-        <item itemvalue="TestNG.FilePathExample.test1" />
-        <item itemvalue="TestNG.JavaScriptExecuterDemo.ScrollDownAndUp" />
-        <item itemvalue="TestNG.JavaScriptExecuterDemo.typeWithJS" />
-        <item itemvalue="TestNG.JavaScriptExecuterDemo.clickWithJS" />
+        <item itemvalue="TestNG.AnotherLoginTest.test1" />
+        <item itemvalue="TestNG.WebTablesExample.printAllCellsByIndex" />
+        <item itemvalue="TestNG.WebTablesExample.getRow" />
+        <item itemvalue="TestNG.WebTablesExample.getAllHeaders" />
+        <item itemvalue="TestNG.WebTablesExample.printTable" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +257,63 @@
       <option name="project" value="LOCAL" />
       <updated>1677797006238</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="full file path --&gt;sent to chooose file element , then uploaded">
+      <created>1677827077981</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677827077981</updated>
+    </task>
+    <task id="LOCAL-00009" summary="implicit wait note in webtables">
+      <created>1677827854750</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677827854750</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Bir table icerigi sadece bir web ellementinin icine atilabilir , sonra get text ve contains() methodu ile assertion yapabiliriz">
+      <created>1677831261055</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677831261055</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Bir table icerigi sadece bir web ellementinin icine atilabilir , sonra get text ve contains() methodu ile assertion yapabiliriz">
+      <created>1677831572525</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677831572525</updated>
+    </task>
+    <task id="LOCAL-00012" summary="one row can be put in one element">
+      <created>1677832376501</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677832376501</updated>
+    </task>
+    <task id="LOCAL-00013" summary="one row can be put inside one element">
+      <created>1677835225283</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677835225283</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FileInputStream deki file Properties obj nine aktarildi">
+      <created>1677927016400</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677927016400</updated>
+    </task>
+    <task id="LOCAL-00015" summary="FileInputStream deki file Properties obj nine aktarildi">
+      <created>1677927414507</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677927414508</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,14 +347,20 @@
     <MESSAGE value="eklendi" />
     <MESSAGE value="day 10 -- new additions" />
     <MESSAGE value="file path example -day 10 modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="file path example -day 10 modified" />
+    <MESSAGE value="full file path --&gt;sent to chooose file element , then uploaded" />
+    <MESSAGE value="implicit wait note in webtables" />
+    <MESSAGE value="Bir table icerigi sadece bir web ellementinin icine atilabilir , sonra get text ve contains() methodu ile assertion yapabiliriz" />
+    <MESSAGE value="one row can be put in one element" />
+    <MESSAGE value="one row can be put inside one element" />
+    <MESSAGE value="FileInputStream deki file Properties obj nine aktarildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="FileInputStream deki file Properties obj nine aktarildi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java</url>
-          <line>125</line>
+          <line>126</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
