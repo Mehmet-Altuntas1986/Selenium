@@ -11,11 +11,12 @@ import org.testng.annotations.Test;
 public class ExtentDemoTest {
 
     //this class is used for starting and building reports
-    ExtentReports report;
+    ExtentReports report;                              //-->2. adim  Object olustur ve report.attachReporter(htmlReporter);
     //this class is used to create HTML report file
-    ExtentHtmlReporter htmlReporter;
+    ExtentHtmlReporter htmlReporter;                   //-----> 1. adim Object olustur ve full path i yapistir
     //this will  define a test, enables adding logs, authors, test steps
     ExtentTest extentLogger;
+
 
     @BeforeMethod
     public void setup(){
@@ -23,10 +24,18 @@ public class ExtentDemoTest {
         report = new ExtentReports();  //object
 
         //create a report path-->where i find my project ready //dynamic way use and make it work in all computers
-        String projectPath = System.getProperty("user.dir");   // //Users/mehmetaltuntas/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/java/Users/mehmetaltuntas/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/java
-        String path = projectPath + "/test-output/report.html"; //bir file olusturduk -folder name is test-output , in a real project , we will not have static file name , farkli farkli isimler olacak
-                                                     //sol tarafa bak intellj de test output adinda bir dosya ve icindede report.html dosyasi var
-                                                     //report.html in uzerinde saga tikla-->reveal in finder--> open it with any browser that you want-->and see the report
+        String projectPath = System.getProperty("user.dir");
+                                                             System.out.println( "projectPath = " + projectPath );
+        String filePathInProject="test-output/report.html";
+                                                             System.out.println( "filePathInProject = " + filePathInProject );
+      /*
+      --bir file olusturduk -folder name is test-output , in a real project , we will not have static file name , farkli farkli isimler olacak
+      --sol tarafa bak intellj de test output adinda bir dosya ve icindede report.html dosyasi var
+      --report.html in uzerinde saga tikla-->reveal in finder--> open it with any browser that you want-->and see the report
+       */
+
+      //this full path work in all  computers
+        String path = projectPath +"/"+filePathInProject ;
         //initialize the html reporter with the report path
         htmlReporter = new ExtentHtmlReporter(path);
 

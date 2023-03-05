@@ -24,7 +24,7 @@ public class PageSubtitleTest extends TestBase {
         //object olustur -->  DashBoardPage class i ile --> bu class extends BasePage ve ordaki methodlari kullanabilir
         LoginPage loginPage = new LoginPage();
 
-        loginPage.loginAsDriver();          //loginAsDriver() methoud loginPage  class inin  icinde  -->passprot ve username girilerek click ediyor
+        loginPage.loginAsDriver();          //loginAsDriver() methoud loginPage  class inin  icinde  -->password ve username girilerek click ediyor
 
         String expectedSubtitle = "Quick Launchpad";
 

@@ -5,24 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a748523c-87e5-4a17-aa76-64e50ecf19b6" name="Default Changelist" comment="FileInputStream deki file Properties obj nine aktarildi">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/pageFactory.initelelements.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/what is object initialization.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day15_review/verifyContactInfoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day16_ddf/DDFLoginTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/contactDetailsTest20230305030529.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/contactDetailsTest20230305073524.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075046.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075307.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075339.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075515.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075554.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075625.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075703.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075747.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075816.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305075839.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091012.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091035.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091105.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091137.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091207.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091234.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091304.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091328.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091405.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091428.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091456.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305091526.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100331.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100354.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100447.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100510.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100536.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100600.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100625.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100659.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100726.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100758.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/test120230305100824.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/PropertiesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/Singleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests/SingletonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day13_pom/NegativeLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day13_pom/NegativeLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day15_review/verifyContactInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day15_review/verifyContactInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day13_pom/PageSubtitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day13_pom/PageSubtitleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day14_extent_reports/ExtentDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day14_extent_reports/ExtentDemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/DDFLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/DDFLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/Utilities/ConfigurationReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/Utilities/ConfigurationReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/DDFWithDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/DDFWithDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/ExcelUtilsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf/ExcelUtilsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/ExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Vytracktestdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Vytracktestdata.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/pages/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day14_extent_reports/NegativeLoginTestWithReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day15_review/verifyContactInfoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day16_ddf/DDFLoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day12_properties_driver_tests/PropertiesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day12_properties_driver_tests/PropertiesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day12_properties_driver_tests/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day12_properties_driver_tests/Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day14_extent_reports/ExtentDemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/tests/day14_extent_reports/ExtentDemoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,34 +107,87 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/Users/mehmetaltuntas/Desktop/projects/Eu3TestNGSelenium"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/Users/mehmetaltuntas/Desktop/projects/Eu3TestNGSelenium&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day12_properties_driver_tests" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day9_popups_tabs_frames" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day8_types_of_elements_2" />
       <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day7_types_of_the_elements" />
-      <recent name="$PROJECT_DIR$/src/test/java/com/cybertek/tests/day16_ddf" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AnotherLoginTest.test1">
-    <configuration name="AnotherLoginTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DDFWithDataProvider.test1">
+    <configuration name="DDFLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day12_properties_driver_tests.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day16_ddf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day12_properties_driver_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day12_properties_driver_tests.AnotherLoginTest" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day16_ddf" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day16_ddf.DDFLoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DDFLoginTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day16_ddf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day16_ddf" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day16_ddf.DDFLoginTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DDFWithDataProvider.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day16_ddf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day16_ddf" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day16_ddf.DDFWithDataProvider" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtentDemoTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Eu3TestNGSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.tests.day14_extent_reports.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day14_extent_reports" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day14_extent_reports.ExtentDemoTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -117,71 +214,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTablesExample.getAllHeaders" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="verifyContactInfoTest.contactDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Eu3TestNGSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
+          <option name="PATTERN" value="com.cybertek.tests.day15_review.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
-      <option name="METHOD_NAME" value="getAllHeaders" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTablesExample.getRow" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
-      <option name="METHOD_NAME" value="getRow" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTablesExample.printAllCellsByIndex" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
-      <option name="METHOD_NAME" value="printAllCellsByIndex" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTablesExample.printTable" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Eu3TestNGSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cybertek.tests.day11_webtables.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cybertek.tests.day11_webtables" />
-      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day11_webtables.WebTablesExample" />
-      <option name="METHOD_NAME" value="printTable" />
+      <option name="PACKAGE_NAME" value="com.cybertek.tests.day15_review" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.tests.day15_review.verifyContactInfoTest" />
+      <option name="METHOD_NAME" value="contactDetailsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AnotherLoginTest.test1" />
-        <item itemvalue="TestNG.WebTablesExample.printAllCellsByIndex" />
-        <item itemvalue="TestNG.WebTablesExample.getRow" />
-        <item itemvalue="TestNG.WebTablesExample.getAllHeaders" />
-        <item itemvalue="TestNG.WebTablesExample.printTable" />
+        <item itemvalue="TestNG.DDFWithDataProvider.test1" />
+        <item itemvalue="TestNG.DDFLoginTest.test1" />
+        <item itemvalue="TestNG.DDFLoginTest" />
+        <item itemvalue="TestNG.verifyContactInfoTest.contactDetailsTest" />
+        <item itemvalue="TestNG.ExtentDemoTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +403,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java</url>
-          <line>126</line>
+          <line>135</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

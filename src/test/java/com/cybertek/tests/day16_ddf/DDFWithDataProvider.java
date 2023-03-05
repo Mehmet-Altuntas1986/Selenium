@@ -23,7 +23,7 @@ public class DDFWithDataProvider {
 
     }
 
-//data driven testde loop olusturmadigimiz halde , 9 ayri test run oldu yazilan bir code ile,
+// data driven testde loop olusturmadigimiz halde , 9 ayri test run oldu yazilan bir code ile,
 // ve bir test de hata olsa bile execution devam ediyor
 
 

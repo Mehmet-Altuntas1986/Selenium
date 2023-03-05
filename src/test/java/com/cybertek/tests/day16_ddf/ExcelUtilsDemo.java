@@ -16,7 +16,7 @@ public class ExcelUtilsDemo {
         //Create an object from ExcelUtil
         //it accepts two argument
         //Argument 1: location of the excel file(path)  --right click on excel file-->copy path root
-        //Argument 2: sheet that wew want to open(sheetName)
+        //Argument 2: sheet that wegit c want to open(sheetName)
 
         ExcelUtil qa3short = new ExcelUtil("src/test/resources/Vytracktestdata.xlsx","QA3-short"); //exelin icini ac--alttaki sheetlerden birinin ismi QA3-short
 

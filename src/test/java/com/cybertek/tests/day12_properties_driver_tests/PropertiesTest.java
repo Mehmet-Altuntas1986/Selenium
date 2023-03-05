@@ -20,15 +20,14 @@ public class PropertiesTest {
         String url = ConfigurationReader.get("url");
 
         System.out.println("url = " + url);
-
     }
 
     @Test
     public void OpenBrowserWithConf(){//configuration browserdaki url ve browser calisiyor, baglanti isini configurationReader class i yapiyor
 
-        WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.get("browser"));//onceki derslerde parantez icine chrome yaziyorduk ,
+        WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.get("browser")); //onceki derslerde parantez icine chrome yaziyorduk ,
                                               // simdi configuration.properties de koydugumuz browser ile calisabilir
-                                              //browser degisikligi yapma isini configuration.properties kisminda yapacagiz
+                                              // browser degisikligi yapma isini configuration.properties kisminda yapacagiz
 
         driver.get(ConfigurationReader.get("url"));  //configuration.properties de bulunan url , degisklik yapinca  onfiguration.properties de yapiyoruz
 
@@ -40,7 +39,5 @@ public class PropertiesTest {
                                                                                                 // tab a tiklayinca alttaki box in icine geciyor
 
     }
-
-
 }
-//sirasiyla once PropertiesTest, Singleton,SingletonTest sonra Utilities package inda Driver i copy paste yapin  dedi
+//sirasiyla once PropertiesTest, Singleton,SingletonTest sonra Utilities package inda Driver i copy paste yapin dedi

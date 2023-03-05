@@ -17,7 +17,7 @@ public class NegativeLoginTest extends TestBase {  //login test inin negativini 
         loginPage.passwordInput.sendKeys("somepassword"); //driver.findElement(By.id("PrependInput2")).sendKeys("somepassword");
         loginPage.loginBtn.click();                                   //driver.findElement(By.id("_submit")).click();
 
-        Assert.assertEquals(driver.getCurrentUrl(),"https://qa1.vytrack.com/user/login");
+        Assert.assertEquals(driver.getCurrentUrl(),"https://qa1.vytrack.com/user/login");  //consolu incele
 
     }
           //ogretmen dk 27 de configuration.properties deki degerleri degistirdi ve dediki ayni verileri girin

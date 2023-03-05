@@ -70,7 +70,7 @@ public class ExcelUtil {   //r class
 
         String[][] data = new String[rowCount()-1][columnCount()];
 
-        for (int i = 1; i < rowCount(); i++) {            //firsr for --> row
+        for (int i = 1; i < rowCount(); i++) {            //first for --> row -->second row dan baslamis
             for (int j = 0; j < columnCount(); j++) {     //second for --> column
                 String value = getCellData(i, j);
                 data[i-1][j] = value;
@@ -80,7 +80,7 @@ public class ExcelUtil {   //r class
 
     }
 
-    public List<Map<String, String>> getDataList() {
+    public List< Map<String, String> > getDataList() {
         // get all columns
         List<String> columns = getColumnsNames();
         // this will be returned
