@@ -23,7 +23,7 @@ public class DDFLoginTest extends TestBase {  //EACH TEST CASE OPENING SEPERATE 
     //resources file inin icindeki exel de username,password , firstname and lastname isimli exel basliklari var ilk row da
     @Test(dataProvider = "userData")
     public void test1(String username,String password,String firstName,String lastName){  //a,b,c,d de desek calisirdi , onemli olan siralamalri --> birincisi isim , ikincisi SIFRE....
-        extentLogger=report.createTest("Test "+firstName+" "+lastName); //DYNAMIC
+        extentTestLogger=report.createTest("Test "+firstName+" "+lastName); //DYNAMIC
         LoginPage loginPage = new LoginPage();
 
         loginPage.login(username,password);
@@ -35,7 +35,7 @@ public class DDFLoginTest extends TestBase {  //EACH TEST CASE OPENING SEPERATE 
         String expectedFullName = firstName+" "+lastName;
 
         Assert.assertEquals(actualFullName,expectedFullName,"verify fullname");  //bu kismi cikarirsak , bu test case olmaktan cikar
-        extentLogger.pass("PASSED");
+        extentTestLogger.pass("PASSED");
     }
 
 

@@ -30,7 +30,7 @@ public class TestBase { // Test base i olusturmamizimn sebebi herbir test case d
     //this class is used to create HTML report file
     protected ExtentHtmlReporter htmlReporter;
     //this will  define a test, enables adding logs, authors, test steps
-    protected ExtentTest extentLogger;
+    protected ExtentTest extentTestLogger;
 
     @BeforeTest
     public void SetUpTest(){  //day-14-copy paste here
@@ -80,21 +80,21 @@ public class TestBase { // Test base i olusturmamizimn sebebi herbir test case d
 
                //ITestResult CLASS DESCRIBES THE RESULT OF A TEST IN TestNG
     @AfterMethod
-    public void tearDown(ITestResult result) throws InterruptedException, IOException {  // ITestResult class is from  testng
+    public void tearDown(ITestResult result) throws InterruptedException, IOException {  // ITestResult Interface is from  testng
         //if test fails        ---note herzaman screenshot almiyoruz bu durumda
         if (result.getStatus()==ITestResult.FAILURE){  //int , 2 int degeri- failure i gosteriyor ---nokta ya tiklayinca gorursun secenekleri
 
              //record the name of failed test case
-            extentLogger.fail( result.getName() );                //test case in ismine result.getName ile ulasiyor
+            extentTestLogger.fail( result.getName() );                //test case in ismine result.getName ile ulasiyor
 
             //take the screenschot and return location of screenshot
             String screenShotPath= BrowserUtils.getScreenshot(result.getName()  );  //screenshot is ready , now i should attach it to reports
 
             //add your screenshot to your report
-            extentLogger.addScreenCaptureFromPath( screenShotPath );
+            extentTestLogger.addScreenCaptureFromPath( screenShotPath );
 
             //capture the exception and put inside the report
-            extentLogger.fail( result.getThrowable() );
+            extentTestLogger.fail( result.getThrowable() );
         }
         Thread.sleep( 2000 );
         Driver.closeDriver();

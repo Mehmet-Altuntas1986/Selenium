@@ -21,7 +21,6 @@ public class PropertiesTest {
 
         System.out.println("url = " + url);
 
-
     }
 
     @Test

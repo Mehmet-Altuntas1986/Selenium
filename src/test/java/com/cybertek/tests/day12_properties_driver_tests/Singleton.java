@@ -1,10 +1,11 @@
 package com.cybertek.tests.day12_properties_driver_tests;
 
-public class Singleton {  //using the same object everywhere in the application
+public class Singleton {  //using the same object everywhere in the application        //Bu class Driver class ini anlamamiz icin olusturuldu.Driver classinda singleton pattern i kullaniyoruz
 
      // singleton class will have private constructor
     //  it means other classes cannot create object of this class
-    private Singleton(){}
+
+    private Singleton(){} //constructor
 
     private static String str;
 

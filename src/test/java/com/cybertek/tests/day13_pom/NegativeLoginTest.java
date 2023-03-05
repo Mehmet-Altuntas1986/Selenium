@@ -13,7 +13,7 @@ public class NegativeLoginTest extends TestBase {  //login test inin negativini 
 
 //        LoginPage loginPage = new LoginPage();      //Buraya yazmaya gerek yok ,line 10 da olusturulmus
 
-        loginPage.usernameInput.sendKeys("user1");  //driver.findElement(By.id("PrependInput")).sendKeys("user1");
+        loginPage.usernameInput.sendKeys("user1");         //driver.findElement(By.id("PrependInput")).sendKeys("user1");
         loginPage.passwordInput.sendKeys("somepassword"); //driver.findElement(By.id("PrependInput2")).sendKeys("somepassword");
         loginPage.loginBtn.click();                                   //driver.findElement(By.id("_submit")).click();
 

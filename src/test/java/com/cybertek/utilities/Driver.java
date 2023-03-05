@@ -68,8 +68,8 @@ public class Driver {  //utilities paketinde   //Bu ONCEDEN OLUSTURMUS OLDUGumuz
         return driver;
     }
 
-    public static void closeDriver() { //closeDriver is making my driver null boylece jvm yeniden if statementinin icine gider bir sonraki test case de Driver.get deyince
-                                       //bu kismi kullanmasaydik hep ayni driver i kullanmis olurduk
+    public static void closeDriver() {  //closeDriver is making my driver null boylece jvm yeniden if statementinin icine gider bir sonraki test case de Driver.get deyince
+                                        //bu kismi kullanmasaydik hep ayni driver i kullanmis olurduk
         if (driver != null) {
             driver.quit();
             driver = null; //assignment
@@ -82,4 +82,4 @@ public class Driver {  //utilities paketinde   //Bu ONCEDEN OLUSTURMUS OLDUGumuz
 // Driver bir singleton design pattern a ornek - cunku bu class ile diger classlar object olusturamazlar. Ve Bu class
 // ta olusturulmus olan object heryerde kullanilabilir. yani tek object heryerde islevsel
 
-//Encapsulation -->we have a Driver class that uses private driver variable and we use the public getter method to access this.
+//Encapsulation -->we have a Driver class that uses private driver variable and we use the public getter method to access this. Nobody can set it , just call it from other class
